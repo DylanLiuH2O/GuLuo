@@ -1,0 +1,37 @@
+<!-- 暂未完成 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>模板</title>
+    <title>首页 - 谷洛 | 计算机教育新生态</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/common.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="header"></div>
+    <div id="sidebar"></div>
+    
+    <div id="main">
+        <!-- 在此处写页面 -->
+        
+
+    </div>
+
+    <div id="footer"></div>
+</body>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $("#header").load("/common/header.html");
+    $("#sidebar").load("/common/sidebar.html");
+    $("#footer").load("/common/footer.html");
+</script>
+</html>

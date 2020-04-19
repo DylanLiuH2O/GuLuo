@@ -1,0 +1,58 @@
+body {
+    background-color: #EFEFEF;
+}
+
+nav {
+    padding: 5px;
+    background-color: white !important;
+}
+
+nav .glyphicon {
+    margin-right: 10px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 59px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(52, 73, 94);
+    color: rgb(221, 221, 221);
+}
+
+.sidebar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.sidebar .logo {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(52, 152, 219);
+}
+.sidebar .logo img {
+    height: 60%;
+    width: auto;
+}
+.sidebar a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+}
+.sidebar a img {
+    height: 30%;
+    width: 30%;
+    margin-bottom: 5px;
+}
+.sidebar a div {
+    width: 100%;
+}
