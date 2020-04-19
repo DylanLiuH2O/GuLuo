@@ -29,6 +29,16 @@ nav .glyphicon {
     margin-bottom: 12px;
 }
 
+.sidebar .dropdown-menu {
+    left: 65px;
+    top: -10px;
+}
+
+.sidebar .dropdown-menu li a{
+    line-height: 30px;
+    text-align: center;
+}
+
 .sidebar .logo {
     height: 60px;
     width: 100%;
