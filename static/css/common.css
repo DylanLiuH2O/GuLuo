@@ -1,21 +1,18 @@
 body {
     background-color: #EFEFEF;
+    margin-left: 60px;
 }
 
-nav {
+#header .navbar {
     padding: 5px;
     background-color: white !important;
 }
 
-nav .glyphicon {
+#header .navbar .glyphicon {
     margin-right: 10px;
 }
 
-body {
-    margin-left: 60px;
-}
-
-.sidebar {
+#sidebar .sidebar {
     height: 100%;
     width: 60px;
     position: fixed;
@@ -26,7 +23,7 @@ body {
     z-index: 10;
 }
 
-.sidebar div{
+#sidebar .sidebar div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,26 +31,26 @@ body {
     margin-bottom: 12px;
 }
 
-.sidebar .dropdown-menu {
+#sidebar .sidebar .dropdown-menu {
     left: 65px;
     top: -10px;
 }
 
-.sidebar .dropdown-menu li a{
+#sidebar .sidebar .dropdown-menu li a{
     line-height: 30px;
     text-align: center;
 }
 
-.sidebar .logo {
+#sidebar .sidebar .logo {
     height: 60px;
     width: 100%;
     background-color: rgb(52, 152, 219);
 }
-.sidebar .logo img {
+#sidebar .sidebar .logo img {
     height: 60%;
     width: auto;
 }
-.sidebar a {
+#sidebar .sidebar a {
     height: 100%;
     width: 100%;
     display: flex;
@@ -63,64 +60,64 @@ body {
     color: rgb(221, 221, 221);
     text-decoration: none;
 }
-.sidebar a img {
+#sidebar .sidebar a img {
     height: 30%;
     width: 30%;
     margin-bottom: 5px;
 }
-.sidebar a div {
+#sidebar .sidebar a div {
     width: 100%;
 }
 
 
-.header {
+#header .header {
     width: 100%;
     background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(35, 37, 38), rgb(65, 67, 69)) repeat scroll 0% 0%;
     color: #fff;
     padding-bottom: 20px;
 }
-.header .header-main {
+#header .header .header-main {
     max-width: 1200px;
     margin: 0 auto;
 }
-.header-main .bread-crumb {
+#header .header-main .bread-crumb {
     color: #ccc;
     font-size: small;
     padding-top: 20px;
 }
-.header-main .bread-crumb a {
+#header .header-main .bread-crumb a {
     color: #ccc;
     text-decoration: none;
 }
-.header-main .bread-crumb a:hover {
+#header .header-main .bread-crumb a:hover {
     color: #fff;
 }
-.header-main h1 {
+#header .header-main h1 {
     font-weight: bold;
     margin-bottom: 20px;
 }
-.header-main .header-bottom {
+#header .header-main .header-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.header-main .header-bottom button {
+#header .header-main .header-bottom button {
     margin-right: 10px;
 }
-.header-main .header-bottom .data-box {
+#header .header-main .header-bottom .data-box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header-main .header-bottom .data-box>div {
+#header .header-main .header-bottom .data-box>div {
     width: 90px;
     text-align: center;
     border-left: 1px solid #fff;
 }
-.header-main .header-bottom .data-box>div:first-child {
+#header .header-main .header-bottom .data-box>div:first-child {
     border-left: none;
 }
-.header-main .header-bottom .data-box>div div:last-child {
+#header .header-main .header-bottom .data-box>div div:last-child {
     font-weight: bolder;
 }
