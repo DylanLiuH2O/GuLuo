@@ -163,3 +163,14 @@
 
 其他页面（5~7）
 
+
+
+## CSS书写规范（推荐性）
+
+1. 位置属性(position, top, right, z-index, display, float…)
+2. 大小(width, height,  padding, margin…)
+3. 文字系列(font, line-height, letter-spacing, color, text-align…)
+4. 背景(background, border…)
+5. 其他(animation,  transition…)
+
+选择器尽量具体，防止冲突。
