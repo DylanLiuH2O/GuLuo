@@ -50,6 +50,8 @@
 .login-form input {
     border: 1px solid rgb(162, 159, 159);
     border-radius: 3px; 
+    padding: 4px 12px;
+    font-size: small;
 }
 
 ::-webkit-input-placeholder {
