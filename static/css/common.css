@@ -39,6 +39,7 @@ body {
 #sidebar .sidebar .dropdown-menu li a{
     line-height: 30px;
     text-align: center;
+    color: #333;
 }
 
 #sidebar .sidebar .logo {
