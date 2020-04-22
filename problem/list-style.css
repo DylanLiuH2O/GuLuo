@@ -1,0 +1,25 @@
+#search-problem{
+    display: flex;
+    background-color: white;
+    padding: 20px 0;
+}
+
+#search-key{
+    display: flex;
+    /*min-height: 3em;*/
+    align-items: center;
+}
+
+.form-control{
+    flex: 1;
+}
+
+#search-key span#biaoti{
+    display: inline-block;
+    font-size: x-large;
+    width:200px;
+}
+
+#search-key span#choice{
+    width:200px;
+}
