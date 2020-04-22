@@ -14,6 +14,15 @@
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .panel:first-child {
+            margin-top: 30px;
+        }
+
+        .panel {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,6 +34,35 @@
                     <li role="presentation"><a href="#">用户分享主题</a></li>
                     <li role="presentation"><a href="#">我创建的主题</a></li>
                 </ul>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>主题色</th>
+                            <th>主题名称</th>
+                            <th>作者</th>
+                            <th>更新日期</th>
+                            <th>使用人数</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tanmay</td>
+                            <td>洛谷</td>
+                            <td>洛谷</td>
+                            <td>2019-07-01 00:00</td>
+                            <td>317846</td>
+                            <td>
+                                <button type="button" class="btn btn-warning">编辑</button>
+                                <button type="button" class="btn btn-primary">应用</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

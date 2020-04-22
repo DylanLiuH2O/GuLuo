@@ -3,13 +3,6 @@ body {
     margin-left: 60px;
 }
 
-#header {
-    margin-bottom: 30px;
-}
-#bottom {
-    margin-top: 30px;
-}
-
 #header .navbar {
     padding: 5px;
     background-color: white !important;
