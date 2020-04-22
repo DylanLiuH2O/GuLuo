@@ -1,3 +1,7 @@
+.container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 #search-problem{
     display: flex;
     background-color: white;
@@ -5,19 +9,24 @@
 }
 
 #search-key{
+    flex: 1;
     display: flex;
-    /*min-height: 3em;*/
     align-items: center;
 }
 
-.form-control{
-    flex: 1;
+.form-control {
+    
 }
 
-#search-key span#biaoti{
+.btn-primary {
+    margin-right: 20px;
+}
+
+#search-key #biaoti{
     display: inline-block;
     font-size: x-large;
-    width:200px;
+    width: 150px;
+    margin: 0 20px;
 }
 
 #search-key span#choice{
