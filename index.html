@@ -22,20 +22,30 @@
     <!-- 轮播图-每日签到容器 -->
     <div class="slider-checkIn-container">
         <div class="slider">
-            <h2>轮播图</h2>
+            <p class="block-header">轮播图</p>
         </div>
         <div class="check-in">
-            <h2>每日签到</h2>
+            <p class="block-header">每日签到</p>
         </div>
     </div>
 
     <!-- 跳转-数据统计容器 -->
     <div class="jump-statics-container">
         <div class="jump">
-            <h2>问题跳转</h2>
+            <p class="block-header">问题跳转</p>
+            
+            <div class="jump-box">
+                <form class="bs-example bs-example-form" role="form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" size="17" placeholder="例：P1001，可跳至A+B">
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-primary" style="background-color:rgb(219,73,68); border: none;"> 跳转 </button>
+                    <button type="button" class="btn btn-primary" style="background-color:rgb(14,144,210); border: none;"> 随机跳题 </button>
+                </form>
+            </div>
         </div>
         <div class="statics">
-            <h2>数据统计</h2>
         </div>
     </div>
 
@@ -44,25 +54,52 @@
         <div class="col-1">
             <!-- 近期比赛 -->
             <div class="recent-contest">
-                <h2>近期比赛</h2>
+                <p class="block-header">近期比赛</p>
             </div>
             <!-- 近期讨论 -->
             <div class="recent-discuss">
-                <h2>近期讨论</h2>
+                <p class="block-header">近期讨论</p>
             </div>
         </div>
         <div class="col-2">
             <!-- 本站公告 -->
             <div class="annoucement">
-                <h2>本站公告</h2>
+                <p class="block-header">本站公告</p>
+                <div class="annoucement-links">
+                    <p><a href="" class="blue">CYaRon：测试数据生成利器</a></p>
+                    <p><a href="" class="blue">谷洛主题库题目规范</a></p>
+                    <p><a href="" class="blue">题解审核要求及反馈要求</a></p>
+                    <p><a href="" class="blue">新版公开比赛要求</a></p>
+                    <p><a href="" class="blue">谷洛奖项认证功能</a></p>
+                    <p><a href="" class="blue">谷洛咕值系统介绍</a></p>
+                    <p><a href="" class="blue">【题单征集】精选题单征集贴</a></p>
+                    <p><a href="" class="blue">评测机语言环境信息</a></p>
+                </div>
             </div>
             <!-- 计划与推荐 -->
             <div class="plan-and-recommend">
-                <h2>任务计划</h2>
+                <div class="plan">
+                    <div class="title-container">
+                        <p class="block-header">任务计划</p>
+                        <button type="button" class="btn btn-primary" 
+                            style="background-color:rgb(52, 152, 219); border: none;"> 编辑 </button>
+                    </div>
+                    <p class="plan-list">
+                        <span class="score">75</span> 
+                        <span class="problem-ID blue">P1553</span> 
+                        <span class="problem-name blue"><a href="">数字反转（升级版）</a></span>
+                    </p>
+                </div>
+
+                <div class="recommend">
+                    <p class="block-header">智能推荐</p><br>
+                    <P style="font-size: 16px;">暂无推荐</P><br>
+                    <p style="font-size: 12px; line-height: 25px;">洛谷根据您近期的做题情况，使用机器学习自动为您推荐符合您目前程度的题目。本列表每日更新一次。</p>
+                </div>
             </div>
             <!-- 友情链接 -->
             <div class="blogroll">
-                <h2>友情链接</h2>
+                <p class="block-header">友情链接</p>
             </div>
         </div>
     </div>
@@ -89,7 +126,7 @@
      */
     new Page({
         header: "header2",
-        title: "这里是网页标题",
+        title: "首页",
         breadCrumb: [
             {
                 href: "#",
