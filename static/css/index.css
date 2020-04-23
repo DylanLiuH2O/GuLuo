@@ -1,0 +1,127 @@
+/* **轮播图-每日签到** */
+.slider-checkIn-container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    width: 1080px;
+    height: 325px;
+    margin: 0 auto;
+
+    background-color: white;
+}
+
+.slider {
+    width: 690px;
+    height: 270px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border: 1px solid black;
+}
+
+.check-in {
+    width: 330px;
+    height: 285px;
+    margin: 20px;
+
+    border: 1px solid black;
+}
+/* **** */
+
+
+/* **跳转-数据统计** */
+.jump-statics-container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    width: 1080px;
+    height: 195px;
+    margin: 20px auto;
+
+    border: 1px solid black;
+}
+
+.jump {
+    width: 225px;
+    height: 100%;
+
+    background-color: white;
+}
+
+.statics {
+    width: 805px;
+    height: 100%;
+    
+    background-color: white;
+}
+/* **** */
+
+
+/* **多列布局容器** */
+.multiCol-container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    width: 1080px;
+    height: 1170px;
+    margin: 20px auto;
+
+    border: 1px solid black;
+}
+
+.col-1 {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 805px;
+    height: 1040px;
+
+
+    border: 1px solid black;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 255px;
+    height: 100%px;
+
+    border: 1px solid black;
+}
+
+.col-1 .recent-contest {
+    width: 100%;
+    height: 400px;
+
+    background-color: white;
+}
+
+.col-1 .recent-discuss {
+    width: 100%;
+    height: 620px;
+
+    background-color: white;
+}
+
+.col-2 .annoucement {
+    width: 100%;
+    height: 400px;
+
+    background-color: white;
+}
+
+.col-2 .plan-and-recommend {
+    width: 100%;
+    height: 300px;
+
+    background-color: white;
+}
+
+.col-2 .blogroll {
+    width: 100%;
+    height: 430px;
+
+    background-color: white;
+}
