@@ -3,6 +3,26 @@ body {
     margin-left: 60px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.purple{
+    color: rgb(157, 61, 207);
+}
+
+.green{
+    color: rgb(82, 196, 26);
+}
+
+.yellow{
+    color: rgb(243, 156, 17);
+}
+
+.blue{
+    color: rgb(52, 152, 219);
+}
+
 #header .navbar {
     padding: 5px;
     background-color: white !important;
