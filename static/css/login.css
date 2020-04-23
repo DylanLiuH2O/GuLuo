@@ -33,13 +33,13 @@
     margin-bottom: 10px;
     color: rgb(52,152,219);
     font-size: 16px;
+    text-align: center;
 }
 
 .login-form {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
     /* border: 1px solid black; */
 }
 
@@ -50,6 +50,8 @@
 .login-form input {
     border: 1px solid rgb(162, 159, 159);
     border-radius: 3px; 
+    padding: 4px 12px;
+    font-size: small;
 }
 
 ::-webkit-input-placeholder {

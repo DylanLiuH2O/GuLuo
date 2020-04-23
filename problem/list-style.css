@@ -1,0 +1,34 @@
+.container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#search-problem{
+    display: flex;
+    background-color: white;
+    padding: 20px 0;
+}
+
+#search-key{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    
+}
+
+.btn-primary {
+    margin-right: 20px;
+}
+
+#search-key #biaoti{
+    display: inline-block;
+    font-size: x-large;
+    width: 150px;
+    margin: 0 20px;
+}
+
+#search-key span#choice{
+    width:200px;
+}
