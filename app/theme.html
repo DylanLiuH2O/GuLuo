@@ -22,6 +22,18 @@
         .panel {
             margin-bottom: 20px;
         }
+
+        .color-item {
+            width: 50px;
+            height: 22px;
+            border-radius: 4px;
+        }
+
+        td {
+            vertical-align: middle !important; 
+        }
+
+        
     </style>
 </head>
 
@@ -51,14 +63,94 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tanmay</td>
+                            <td>
+                                <div class="color-item" style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(35, 37, 38), rgb(65, 67, 69)) repeat scroll 0% 0%;"></div>
+                            </td>
                             <td>洛谷</td>
-                            <td>洛谷</td>
+                            <td class="bold purple">洛谷</td>
                             <td>2019-07-01 00:00</td>
                             <td>317846</td>
                             <td>
-                                <button type="button" class="btn btn-warning">编辑</button>
-                                <button type="button" class="btn btn-primary">应用</button>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: rgb(0, 92, 151) none repeat scroll 0% 0%;"></div>
+                            </td>
+                            <td>莫奈·日出印象</td>
+                            <td class="bold purple">lin_toto</td>
+                            <td>2019-07-31 00:00</td>
+                            <td>2388</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgba(0, 169, 255, 0.64), rgb(65, 67, 69)) repeat scroll 0% 0%;"></div>
+                            </td>
+                            <td>梵高·星月夜</td>
+                            <td class="bold green">Algha_Porthos</td>
+                            <td>2019-08-01 20:38</td>
+                            <td>1690</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;"></div>
+                            </td>
+                            <td>夜与昼 I</td>
+                            <td class="bold yellow">寒冰大大</td>
+                            <td>2019-08-02 10:01</td>
+                            <td>1490</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;"></div>
+                            </td>
+                            <td>星空</td>
+                            <td class="bold purple">soda</td>
+                            <td>2019-08-01 20:05</td>
+                            <td>785</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(94, 114, 228), rgb(130, 94, 228)) repeat scroll 0% 0%;"></div>
+                            </td>
+                            <td>Argon Luogu</td>
+                            <td class="bold green">solstice23</td>
+                            <td>2019-08-01 20:05</td>
+                            <td>426</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;"></div>
+                            </td>
+                            <td>蜂窝黑</td>
+                            <td class="bold green">Gn23</td>
+                            <td>2019-08-01 20:05</td>
+                            <td>425</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
                             </td>
                         </tr>
                     </tbody>
@@ -91,11 +183,7 @@
         breadCrumb: [
             {
                 href: "#",
-                title: "题目列表"
-            },
-            {
-                href: "#",
-                title: "题目详情"
+                title: "主题商店"
             }
         ]
     })
