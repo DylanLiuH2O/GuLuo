@@ -1,0 +1,298 @@
+.first-face
+{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.search
+{
+    margin-top: 2em;
+    display: block; 
+    margin-bottom: 1.3em; 
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1); 
+    padding: 1.3em;
+    box-sizing: border-box;
+    
+
+}
+.search2 {
+     margin-right: 1em; 
+     font-size: 1.25em;
+     font-weight: bold;
+}
+.search3
+{
+    display: block;
+    float: right;
+    
+}
+.search6
+{
+    display: flex;
+    align-items: center;
+}
+.search7
+{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+.search4
+{
+    line-height: 1.5;
+    font-size: 0.875em;
+    padding: 0.313em 1em;
+    border: 1px solid #bfbfbf;
+}
+button
+{
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-weight: inherit;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0;
+    border: 3.5px solid;
+    border-color: rgb(52, 152, 219);
+    background-color: rgb(52, 152, 219);
+}
+/*section {
+    display: flex;
+    min-height: 3em;
+    align-items: center;
+}*/
+.search1
+{
+    display: flex;
+    min-height: 3em;
+    align-items: center; 
+}
+.leixing
+{
+    display: flex;
+    min-height: 3em;
+    align-items: center;
+    
+}
+.leixing2
+{
+    list-style:none; 
+    margin: 0px; 
+    padding: 0px; 
+    width: auto; 
+}
+.leixing3
+{
+    float:left; 
+}
+.leixing4
+{
+    float:left; 
+   
+}
+b
+{
+  margin-right:3em;
+}
+.leixing1
+{
+    display: block;
+}
+/*.leixing2>li {
+    display: inline-block;
+    margin-left: 1em;
+    padding: 0.063em 0.5em;
+    transition: .3s ease all;
+    border-radius: 3px;
+}
+.leixing2>li.leixing3>a {
+    cursor: default;
+    color: #fff;
+
+}*/
+.leixing2>li>a {
+    color: inherit;
+    text-decoration: none;
+    flex: 1;
+    margin-right: 0.5em;
+}
+a
+{
+    background-color: transparent;
+}
+
+.asd>li
+{
+    float: left;
+}
+.tou{
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: .5em;
+}
+.wancheng1
+{   
+    display: inline-block;
+    min-width: 8em;
+    max-width: 4.5em;
+    background: #e8e8e8;
+    height: 1em;
+    overflow: hidden;
+    
+    
+}
+.wancheng2
+{
+    display: block;
+}
+.qwe
+{
+    padding: .5em 0;
+    border-bottom: 2px solid #e8e8e8;
+}
+.bottom{
+    padding: 1.3em 0px;
+}
+.page-bar{
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.page-bar span {
+    margin-right: 1em;
+}
+
+.page-bar div {
+    display: flex;
+}
+
+.page-bar button
+ {
+    margin-right: .5em;
+    padding: 0;
+    cursor: pointer;
+    width: 1.7em;
+    min-width: 1.7em;
+    height: 1.7em;
+    background: #fff;
+    border: 1px solid #bfbfbf;
+    border-radius: 6px;
+    color: buttontext;
+    text-align: center;
+
+ }
+ button.selected{
+    border-color: rgb(52, 152, 219);
+    background-color: rgb(52, 152, 219);
+    cursor: default;
+    color: #fff;
+   
+ }
+ /*.xuanze1
+ {
+    min-width: 50px;
+    max-width: 100px;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    flex: 1;
+    cursor: pointer;
+}
+.xuanze2
+{
+    width: 100%;
+    height: 20px;
+    font-size: 0.875em;
+    padding: 0.125em 0.5em;
+    box-sizing: border-box;
+    margin-top: .2em;
+    margin-bottom: .2em;
+    flex: 1;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #fff;
+}*/
+.xuanze3
+{
+        margin-left: 1.3em;
+        margin-right: 1.3em;
+        width: 100%;
+        height: 20px;
+        transition-duration: .4s;
+}
+.xuanze4
+{
+    width: 15px;
+    height: 20px;
+}
+.xuanze5
+{
+    position: absolute;
+    margin-top: 2em;
+    width: 100%;
+    color: #333;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 2px;
+    border: solid 1px #eee;
+    box-shadow: 0 0 1em 0.1em rgba(0,0,0,.15);
+    transition: all .15s ease-out;
+    z-index: 9;
+}
+.xuanze6
+{
+    list-style:none; 
+    margin: 0px; 
+    padding: 0px; 
+    max-height: 10em;
+    width: auto; 
+}
+
+.leixing3
+{
+    float:left; 
+}
+.xuanze5
+{      
+        min-height: 80px;
+       
+}
+/*.xuanze6>  li >a{
+    padding: .4em .5em;
+    cursor: pointer;
+    text-decoration: none;
+}
+.xuanze5>li:hover .xuanze6{
+    display: block;
+}*/  
+.xuanze6{
+    
+      display: none;      
+      position: absolute;  
+}
+    
+.xuanze5:hover .xuanze6
+{
+    display:block;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
