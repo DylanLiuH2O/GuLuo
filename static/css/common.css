@@ -97,10 +97,6 @@ body {
     color: #fff;
     padding-bottom: 20px;
 }
-#header .header .header-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 #header .header-main .bread-crumb {
     color: #ccc;
     font-size: small;
