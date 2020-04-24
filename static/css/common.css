@@ -142,3 +142,34 @@ body {
 #header .header-main .header-bottom .data-box>div div:last-child {
     font-weight: bolder;
 }
+
+#footer .footer {
+    background-color: #333;
+    padding: 20px 0 30px;
+}
+
+#footer .footer .container {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer .container .slogan {
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#footer .footer .container .links {
+    text-align: right;
+    flex: 1;
+    color: #ccc;
+}
+
+#footer .footer .container a{
+    color: #ccc;
+    text-decoration: none;
+}
+#footer .footer .container a:hover{
+    color: #fff;
+}
