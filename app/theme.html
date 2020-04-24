@@ -30,10 +30,8 @@
         }
 
         td {
-            vertical-align: middle !important; 
+            vertical-align: middle !important;
         }
-
-        
     </style>
 </head>
 
@@ -42,13 +40,15 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 <ul class="nav nav-pills">
-                    <li role="presentation" class="active"><a href="#">精选主题</a></li>
-                    <li role="presentation"><a href="#">用户分享主题</a></li>
-                    <li role="presentation"><a href="#">我创建的主题</a></li>
+                    <li id="selection" class="theme-tab active" role="presentation"><a href="#">精选主题</a></li>
+                    <li id="share" class="theme-tab" role="presentation"><a href="#">用户分享主题</a></li>
+                    <li id="my" class="theme-tab" role="presentation"><a href="#">我创建的主题</a></li>
                 </ul>
             </div>
         </div>
-        <div class="panel panel-default">
+
+        <!-- 精选主题 -->
+        <div id="panel-selection" class="content-panel panel panel-default">
             <div class="panel-body">
                 <table class="table">
                     <thead>
@@ -64,7 +64,9 @@
                     <tbody>
                         <tr>
                             <td>
-                                <div class="color-item" style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(35, 37, 38), rgb(65, 67, 69)) repeat scroll 0% 0%;"></div>
+                                <div class="color-item"
+                                    style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(35, 37, 38), rgb(65, 67, 69)) repeat scroll 0% 0%;">
+                                </div>
                             </td>
                             <td>洛谷</td>
                             <td class="bold purple">洛谷</td>
@@ -77,7 +79,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="color-item" style="background: rgb(0, 92, 151) none repeat scroll 0% 0%;"></div>
+                                <div class="color-item" style="background: rgb(0, 92, 151) none repeat scroll 0% 0%;">
+                                </div>
                             </td>
                             <td>莫奈·日出印象</td>
                             <td class="bold purple">lin_toto</td>
@@ -90,7 +93,9 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="color-item" style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgba(0, 169, 255, 0.64), rgb(65, 67, 69)) repeat scroll 0% 0%;"></div>
+                                <div class="color-item"
+                                    style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgba(0, 169, 255, 0.64), rgb(65, 67, 69)) repeat scroll 0% 0%;">
+                                </div>
                             </td>
                             <td>梵高·星月夜</td>
                             <td class="bold green">Algha_Porthos</td>
@@ -103,7 +108,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;"></div>
+                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;">
+                                </div>
                             </td>
                             <td>夜与昼 I</td>
                             <td class="bold yellow">寒冰大大</td>
@@ -116,7 +122,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;"></div>
+                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;">
+                                </div>
                             </td>
                             <td>星空</td>
                             <td class="bold purple">soda</td>
@@ -129,7 +136,9 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="color-item" style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(94, 114, 228), rgb(130, 94, 228)) repeat scroll 0% 0%;"></div>
+                                <div class="color-item"
+                                    style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(94, 114, 228), rgb(130, 94, 228)) repeat scroll 0% 0%;">
+                                </div>
                             </td>
                             <td>Argon Luogu</td>
                             <td class="bold green">solstice23</td>
@@ -142,7 +151,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;"></div>
+                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;">
+                                </div>
                             </td>
                             <td>蜂窝黑</td>
                             <td class="bold green">Gn23</td>
@@ -157,6 +167,195 @@
                 </table>
             </div>
         </div>
+
+        <!-- 用户分享主题 -->
+        <div id="panel-share" class="content-panel panel panel-default">
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>主题色</th>
+                            <th>主题名称</th>
+                            <th>作者</th>
+                            <th>更新日期</th>
+                            <th>使用人数</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="color-item"
+                                    style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(35, 37, 38), rgb(65, 67, 69)) repeat scroll 0% 0%;">
+                                </div>
+                            </td>
+                            <td>流浪地球</td>
+                            <td class="bold green">wangyxhaha</td>
+                            <td>2019-08-02 11:56</td>
+                            <td>1423</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: #333 none repeat scroll 0% 0%;"></div>
+                            </td>
+                            <td>夜空の流星</td>
+                            <td class="bold purple">pyyyyyy</td>
+                            <td>2019-08-02 14:00</td>
+                            <td>1083</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item"
+                                    style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgba(0, 169, 255, 0.64), rgb(65, 67, 69)) repeat scroll 0% 0%;">
+                                </div>
+                            </td>
+                            <td>夜与昼 III</td>
+                            <td class="bold yellow">寒冰大大</td>
+                            <td>2019-08-01 20:38</td>
+                            <td>957</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;">
+                                </div>
+                            </td>
+                            <td>珂朵莉 白天</td>
+                            <td class="bold green">G_M_H</td>
+                            <td>2019-08-01 22:37</td>
+                            <td>685</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;">
+                                </div>
+                            </td>
+                            <td>夜与昼 II</td>
+                            <td class="bold yellow">寒冰大大</td>
+                            <td>2019-08-02 14:13</td>
+                            <td>644</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: rgb(244, 90, 141) none repeat scroll 0% 0%;">
+                                </div>
+                            </td>
+                            <td>bilibili幹杯！</td>
+                            <td class="bold yellow">first_fan</td>
+                            <td>2019-08-01 22:38</td>
+                            <td>569</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item"
+                                    style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(225, 75, 120), rgb(23, 208, 180)) repeat scroll 0% 0%;">
+                                </div>
+                            </td>
+                            <td>初音未来</td>
+                            <td class="bold red">时律</td>
+                            <td>2019-08-02 08:17</td>
+                            <td>525</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;">
+                                </div>
+                            </td>
+                            <td>我的世界</td>
+                            <td class="bold green">yuntianming</td>
+                            <td>2019-08-02 08:29</td>
+                            <td>499</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item"
+                                    style="background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(91, 165, 197), rgb(207, 148, 197)) repeat scroll 0% 0%;">
+                                </div>
+                            </td>
+                            <td>Vijos</td>
+                            <td class="bold purple">kkksc03</td>
+                            <td>2019-08-01 19:53</td>
+                            <td>461</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="color-item" style="background: rgb(35, 37, 38) none repeat scroll 0% 0%;">
+                                </div>
+                            </td>
+                            <td>赛博朋克</td>
+                            <td class="bold green">智子</td>
+                            <td>2019-08-02 08:29</td>
+                            <td>30</td>
+                            <td>
+                                <button type="button" class="btn btn-warning btn-xs">编辑</button>
+                                <button type="button" class="btn btn-primary btn-xs">应用</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav style="text-align: right;" aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- 我创建的主题 -->
+        <div id="panel-my" class="content-panel panel panel-default">
+            <div class="panel-body">
+            </div>
+        </div>
+
     </div>
 </body>
 <!-- 以下js文件顺序请勿打乱 -->
@@ -164,19 +363,6 @@
 <script src="/bootstrap/js/bootstrap.min.js"></script>
 <script src="/static/js/common.js"></script>
 <script>
-    /**
-     * 此处是网页公共部分模板, 以下内容主要为调整顶部栏内容, 公共部分的html文件请勿随意修改.
-     * 
-     * header: 选择header, 默认为"header", 可选"header"或"header2". "header"是大多数页面的顶部, "header2"是部分页面的顶部, 例如主页和个人中心.
-     * 
-     * title: 页面标题
-     * 
-     * breadCrumb: 顶部面包屑, 是一个对象数组, 每个对象两个属性, "href"为跳转页面的地址, 建议使用绝对路径, 例如"/index.html","title"为面包屑名称
-     * 
-     * buttons: 按钮组,某些页面存在按钮,是一个对象数组, "href"为跳转页面的地址, "title"为按钮名称, "class"为bootstrap按钮的样式(参考https://v3.bootcss.com/css/#buttons)
-     * 
-     * showData: 布尔值, 是否展示题目数据, 设置为true时会在顶部右侧展示题目数据, (为了方便使用, 题目数据已写死)
-     */
     new Page({
         header: "header",
         title: "主题商店",
@@ -186,6 +372,16 @@
                 title: "主题商店"
             }
         ]
+    })
+
+    $(".content-panel").hide()
+    $("#panel-selection").show()
+    $(".theme-tab").click(function(){
+        $(".theme-tab").removeClass("active")
+        $(this).addClass("active")
+        $(".content-panel").hide()
+        let id = $(this).attr('id')
+        $("#panel-" + id).show()
     })
 </script>
 
