@@ -3,6 +3,15 @@ body {
     margin-left: 60px;
 }
 
+#guluo-page {
+    display: flex;
+    flex-direction: column;
+}
+
+#guluo-main {
+    flex: 1;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -21,6 +30,10 @@ body {
 
 .blue{
     color: rgb(52, 152, 219);
+}
+
+.red {
+    color: rgb(254, 76, 97);
 }
 
 #header .navbar {

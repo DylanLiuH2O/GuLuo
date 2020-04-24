@@ -1,0 +1,106 @@
+.flex-container {
+    display: flex;
+    width: 350px;
+    height: 620px;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.088);
+
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+.login-window {
+    width: 80%;
+    height: 90%;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo img {
+    width: 60%;
+    height: 60%;
+}
+
+.slogn {
+    margin-bottom: 10px;
+    color: rgb(52,152,219);
+    font-size: 16px;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.user-name, .password, .id-code, .submit{
+    margin-bottom: 15px;
+}
+
+.login-form input {
+    border: 1px solid rgb(162, 159, 159);
+    border-radius: 3px; 
+    padding: 4px 12px;
+    font-size: small;
+}
+
+::-webkit-input-placeholder {
+   font-size: 12px; 
+   text-indent: 10px;
+}
+
+
+.id-code img {
+    width: 35%;
+    height: 35%;
+}
+
+.submit button {
+    width: 100%;
+    height: 30px;
+    color: white;
+    border: rgb(52,152,219);
+    background-color: rgba(52,152,219, 0.9);
+}
+
+.sumit button:hover {
+    color: rgb(52,152,190)
+}
+
+.forget-pwd {
+    text-align: right;
+}
+
+
+.login-window-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.login{
+    text-align: center;
+}
+
+.other-way-to-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(136,136,136);
+    margin-bottom: 10px;
+    /* border: 1px solid black; */
+}
+
+.agree-agreement-text{
+    font-size: small;
+    margin: 1px 0;
+}
