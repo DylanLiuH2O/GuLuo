@@ -1,0 +1,191 @@
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+body .block-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body a {
+    text-decoration: none !important;
+}
+
+.slider-checkIn-container, .jump, .statics, .recent-contest {
+    background-color: rgb(250,250,250);
+} 
+.recent-discuss, .annoucement, .plan-and-recommend, .blogroll {
+    background-color: rgb(250,250,250);
+}
+
+
+
+/* **轮播图-每日签到** */
+.slider-checkIn-container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    width: 1080px;
+    height: 325px;
+    margin: 0 auto;
+}
+
+.slider {
+    width: 690px;
+    height: 270px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    border: 1px solid black;
+}
+
+.check-in {
+    width: 330px;
+    height: 285px;
+    margin: 20px;
+
+    border: 1px solid black;
+}
+/* **** */
+
+
+
+/* **跳转-数据统计** */
+.jump-statics-container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    width: 1080px;
+    height: 195px;
+    margin: 20px auto;
+
+    /* border: 1px solid black; */
+}
+
+.jump {
+    width: 255px;
+    height: 100%;
+    padding: 20px;
+}
+
+.jump-box {
+    margin-top: 15px;
+}
+
+.statics {
+    width: 805px;
+    height: 100%;
+    padding: 20px;
+    background-image: url(/static/img/statics-pic.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+/* **** */
+
+
+
+/* **多列布局容器** */
+.multiCol-container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    width: 1080px;
+    height: 1170px;
+    margin: 20px auto;
+
+    /* border: 1px solid black; */
+}
+
+.col-1 {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 805px;
+    height: 1040px;
+
+    /* border: 1px solid black; */
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 255px;
+    height: 100%px;
+
+    /* border: 1px solid black; */
+}
+
+.col-1 .recent-contest {
+    width: 100%;
+    height: 400px;
+}
+
+.col-1 .recent-discuss {
+    width: 100%;
+    height: 620px;
+}
+
+.col-2 .annoucement, .plan-and-recommend, .blogroll {
+    padding: 20px 15px;
+}
+
+.col-2 .annoucement {
+    width: 100%;
+    height: 400px;
+}
+
+.col-2 .annoucement-links p {
+    font-size: 16px;
+    line-height: 2.6em; 
+}
+
+.col-2 .plan-and-recommend {
+    width: 100%;
+    height: 300px;
+}
+
+.col-2 .title-container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.col-2 .plan {
+    margin-bottom: 40px;
+}
+
+.col-2 .plan .score {
+    font-weight: 700;
+    color: rgb(94, 195, 94); 
+}
+
+.col-2 .problem-ID {
+    font-weight: 700;
+}
+.col-2 .plan .plan-list {
+    font-size: 16px;
+}
+
+.col-2 .blogroll {
+    width: 100%;
+    height: 430px;
+}
+
+.col-2 strong {
+    color: rgb(81,81,81);
+}
+
+.col-2 .school-institution, .parter, .blogs, .project {
+    margin-top: 25px;
+}
+
+.col-2 .school-institution, .parter, .blogs, .project p {
+    font-size: 16px;
+}
