@@ -86,51 +86,40 @@ body a {
 /* **** */
 
 /* **标记样式** */
-.Rated {
+.col-1 .container .Rated, .IOI, .ACM, .OfficialContest, .TeamOpen, .Top {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 8px;
     border-radius: 2px;
-    background-color: rgb(94,185,94);
     font-weight: bold;
+    font-size: 12px;
     color: white;
+}
+
+.Rated {
+    background-color: rgb(94,185,94);
 }
 
 .IOI {
-    display: inline-block;
     background-color: rgb(241,196,15);
-    font-weight: bold;
-    color: white;
 }
 
 .ACM {
-    display: inline-block;
     background-color: rgb(142,68,173);
-    font-weight: bold;
-    color: white;
 }
 
 .OfficialContest {
-    display: inline-block;
     background-color: rgb(231,76,60);
-    font-weight: bold;
-    color: white;
 }
 
 .TeamOpen {
-    display: inline-block;
     background-color: rgb(58,107,67);
-    font-weight: bold;
-    color: white;
 }
 
 .Top {
-    display: inline-block;
     background-color: rgb(231,76,60);
-    font-weight: bold;
-    color: white;
 }
-
 /* **** */
+
 
 /* **多列布局容器** */
 .multiCol-container {
@@ -173,15 +162,14 @@ body a {
 
 .col-1 .col-md-6 {
     width: 338px;
-    height: 94px;
     margin: 5px;
     padding: 0;
     border-radius: 5px;
 }
 
-.col-1 .container a {
+.col-1 .container header a {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .col-1 .contest-red {
@@ -210,15 +198,43 @@ body a {
     display: inline-block;
     box-sizing: border-box;
     width: 100%;
-    padding: 10px 20px 10px 10px;
+    /* padding: 7px 30px 7px 7px; */
+    padding: 7px 40px 7px 15px;
 }
 
 .col-1 .contest-card-content {
-    background-color: white;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
     width: 100%;
-    margin-bottom: 0;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
 }
 
+/* .col-1 .contest-status {
+    margin-left: 5px;
+} */
+
+
+.col-1 .notStart {
+    color: rgb(94,185,94);
+    font-weight: bold;
+}
+
+.col-1 .completed {
+    color: rgb(231,76,60);
+    font-weight: bold;
+}
+
+.col-1 .notStart, .completed, 
+.time-before-start, time, .author a{
+    font-size: 11px;
+}
+
+.col-1 .time-before-start, time {
+    color: rgb(127,127,127);
+}
 
 .col-1 .recent-discuss {
     width: 100%;
