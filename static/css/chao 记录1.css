@@ -1,7 +1,7 @@
 .first-face
 {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
 .search
@@ -279,6 +279,100 @@ a
 {
     display:block;
 }
+.avatar > img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+.row>div{
+    display: inline-block;
+}
+.user > div {
+    display: flex;
+    flex-direction: column;
+}
+.avatar
+{
+    padding: 10px;
+}
+.shijian
+{
+    padding-left: 20em;
+}
+.rou-wrap
+{
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 10px;
+
+}
+.shijian2
+{
+    padding-left: 11.8em;
+}
+.shijian3
+{
+    padding-left: 16em;
+}
+.shijian4
+{
+    padding-left: 11.8em;
+}
+.shijian5
+{
+    padding-left: 27em;
+}
+.tu
+{
+    padding: 4px;
+    border-radius: 3px;
+}
+a:hover 
+{ text-decoration:none;}
+.page-bar div {
+    display: flex;
+}
+
+.page-bar button
+ {
+    margin-right: .5em;
+    padding: 0;
+    cursor: pointer;
+    width: 2em;
+    min-width: 2em;
+    height: 2em;
+    background: #fff;
+    border: 1px solid #bfbfbf;
+    border-radius: 6px;
+    color: buttontext;
+    text-align: center;
+
+ }
+ button.selected{
+    border-color: rgb(52, 152, 219);
+    background-color: rgb(52, 152, 219);
+    cursor: default;
+    color: #fff;
+   
+ }
+
+
+
+
+
+
+
+
+
+
  
 
 
