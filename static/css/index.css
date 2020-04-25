@@ -85,6 +85,8 @@ body a {
 }
 /* **** */
 
+
+
 /* **标记样式** */
 .col-1 .container .Rated, .IOI, .ACM, .OfficialContest, .TeamOpen, .Top {
     display: inline-block;
@@ -121,6 +123,7 @@ body a {
 /* **** */
 
 
+
 /* **多列布局容器** */
 .multiCol-container {
     display: flex;
@@ -149,10 +152,14 @@ body a {
     flex-direction: column;
     justify-content: space-between;
     width: 255px;
-    height: 100%px;
+    height: 100px;
 
     /* border: 1px solid black; */
 }
+
+
+
+
 
 .col-1 .recent-contest {
     width: 100%;
@@ -160,14 +167,14 @@ body a {
     padding: 20px 20px 20px 15px;
 }
 
-.col-1 .col-md-6 {
+.col-1 .recent-contest .col-md-6 {
     width: 338px;
     margin: 5px;
     padding: 0;
     border-radius: 5px;
 }
 
-.col-1 .container header a {
+.col-1 .recent-contest .container header a {
     font-weight: bold;
     font-size: 13px;
 }
@@ -202,7 +209,7 @@ body a {
     padding: 7px 40px 7px 15px;
 }
 
-.col-1 .contest-card-content {
+.col-1 .recent-contest .contest-card-content {
     display: flex;
     display: -webkit-flex;
     justify-content: space-between;
@@ -217,29 +224,80 @@ body a {
 } */
 
 
-.col-1 .notStart {
+.col-1 .recent-contest .notStart {
     color: rgb(94,185,94);
     font-weight: bold;
 }
 
-.col-1 .completed {
+.col-1 .recent-contest .completed {
     color: rgb(231,76,60);
     font-weight: bold;
 }
 
-.col-1 .notStart, .completed, 
-.time-before-start, time, .author a{
+.col-1 .recent-contest .notStart, .completed, 
+.time-before-start, .contest-period time, .author a{
     font-size: 11px;
 }
 
-.col-1 .time-before-start, time {
+.col-1 .recent-contest .time-before-start, .contest-period time {
     color: rgb(127,127,127);
 }
+
+
+
+
 
 .col-1 .recent-discuss {
     width: 100%;
     height: 620px;
+    padding: 20px 20px 20px 15px;
 }
+
+.col-1 .recent-discuss .col-md-6 {
+    display: flex;
+    display: -webkit-flex;
+    width: 338px;
+    height: 83px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(52,152,219);
+    background-color: white;
+}
+
+.col-1 .discuss-col-1 {
+    margin: 5px 0;
+    margin-left: 5px;
+}
+
+.col-1 .discuss-col-2 {
+    margin: 5px 0;
+    margin-left: 15px;
+}
+
+.col-1 .recent-discuss .discuss-avatar img {
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.col-1 .recent-discuss .discuss-content {
+    margin-left: 20px;
+}
+
+.col-1 .recent-discuss .discuss-header {
+
+}
+
+.col-1 .recent-discuss .author {
+    font-weight: bold;
+}
+
+.col-1 .recent-discuss .publish-date, .response, .in {
+    color: rgb(127,127,127);
+}
+
+
+
 
 .col-2 .announcement, .plan-and-recommend, .blogroll {
     padding: 20px 15px;
