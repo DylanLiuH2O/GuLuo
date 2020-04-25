@@ -22,10 +22,54 @@
     <!-- 轮播图-每日签到容器 -->
     <div class="slider-checkIn-container">
         <div class="slider">
-            <p class="block-header">轮播图</p>
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>   
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="/static/img/banner/banner1.png" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="/static/img/banner/banner2.png" alt="Second slide">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
         <div class="check-in">
-            <p class="block-header">每日签到</p>
+            <div class="title">
+                <p><strong>欢迎回来，<span class="username">爱摸鱼的小屁孩</strong></span></p>
+            </div>
+            <div class="content">
+                <div class="lunar-month">
+                    <p>四月小</p>
+                </div>
+                <div class="date">
+                    <p>25</p>
+                </div>
+                <div class="day">
+                    <p>星期六</p>
+                </div>
+            </div>
+            <div class="countdown">
+                <p>距<strong> CSP 2020 第一轮 </strong>还剩<strong> 174 </strong>天</p>
+                <p>距<strong> CSP 2020 第二轮 </strong>还剩<strong> 202 </strong>天</p>
+            </div>
+            <div class="check-in-btn">
+                <button type="button" class="btn btn-primary" style="background-color:rgb(224,105,12); border: none;width:98px;height:37px;"> 点击打卡 </button>
+            </div>
         </div>
     </div>
 
@@ -176,8 +220,8 @@
                                <img src="/static/img/avatar/LPW.jpg">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【日报#233】曾经沧海难为水...</a></p>
-                                <p><span class="author purple">唔西·迪西</span> in <a href="">青山</a></p>
+                                <header><a href="">【日报#233】曾经沧海难为水...</a></header>
+                                <p><span class="author purple">唔西·迪西</span><span class="in"> In </span><a href="" class="area">绿水</a></p>
                                 <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span><span class="Top">置顶</span></p>
                             </div>
                         </div>
@@ -186,8 +230,8 @@
                                 <img src="/static/img/avatar/WA.jpg">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【月刊#233】除却巫山不是云...</a></p>
-                                <p><span class="author red">依古·比古</span><span class="in"> in </span><a href="">绿水</a></p>
+                                <header><a href="">【月刊#233】除却巫山不是云...</a></header>
+                                <p><span class="author red">依古·比古</span><span class="in"> In </span><a href="" class="area">青山</a></p>
                                 <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span><span class="Top">置顶</span></p>
                             </div>
                         </div>
@@ -198,9 +242,9 @@
                                 <img src="/static/img/avatar/ZXY.jpg">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【月刊#233】除却巫山不是云...</a></p>
-                                <p><span class="author red">依古·比古</span><span class="in"> in </span><a href="">绿水</a></p>
-                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span><span class="Top">置顶</span></p>
+                                <header><a href="">人是铁，hs是刚，一天不搞心慌慌</a></header>
+                                <p><span class="author yellow">隔壁老张</span><span class="in"> In </span><a href="" class="area">HS版</a></p>
+                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 339回复 </span><span class="Top">置顶</span></p>
                             </div>
                         </div>
                         <div class="col-md-6 discuss-col-2">
@@ -208,9 +252,9 @@
                                 <img src="/static/img/avatar/LDL.jpg">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【月刊#233】除却巫山不是云...</a></p>
-                                <p><span class="author red">依古·比古</span><span class="in"> in </span><a href="">绿水</a></p>
-                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span><span class="Top">置顶</span></p>
+                                <header><a href="">【吐槽】呜呜呜，算法好难...</a></header>
+                                <p><span class="author blue">刘无能</span><span class="in"> In </span><a href="" class="area">吐槽专区</a></p>
+                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 233回复 </span><span class="Top">置顶</span></p>
                             </div>
                         </div>
                     </div>
@@ -220,9 +264,9 @@
                                 <img src="/static/img/avatar/LYC.jpg">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【月刊#233】除却巫山不是云...</a></p>
-                                <p><span class="author red">依古·比古</span><span class="in"> in </span><a href="">绿水</a></p>
-                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span><span class="Top">置顶</span></p>
+                                <header><a href="">今有田广十五步,从十六步。问为田几何?</a></header>
+                                <p><span class="author green">数学大帝</span><span class="in"> In </span><a href="" class="area">九章算术</a></p>
+                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 149回复 </span><span class="Top">置顶</span></p>
                             </div>
                         </div>
                         <div class="col-md-6 discuss-col-2">
@@ -230,8 +274,8 @@
                                 <img src="/static/img/avatar/QR.jpg">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【月刊#233】除却巫山不是云...</a></p>
-                                <p><span class="author red">依古·比古</span><span class="in"> in </span><a href="">绿水</a></p>
+                                <header><a href="">Good Good Study, Day Day Up.</a></header>
+                                <p><span class="author red">QAQ</span><span class="in"> In </span><a href="" class="area">I have a dream.</a></p>
                                 <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span><span class="Top">置顶</span></p>
                             </div>
                         </div>
@@ -242,8 +286,8 @@
                                 <img src="/static/img/avatar/DJ.jpg">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【月刊#233】除却巫山不是云...</a></p>
-                                <p><span class="author red">依古·比古</span><span class="in"> in </span><a href="">绿水</a></p>
+                                <header><a href="">歪？我这里信号不好，先挂了...</a></header>
+                                <p><span class="author green">宜宾第一DJ</span><span class="in"> In </span><a href="" class="area">高山</a></p>
                                 <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span><span class="Top">置顶</span></p>
                             </div>
                         </div>
@@ -252,9 +296,9 @@
                                 <img src="/static/img/avatar/2.png">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【月刊#233】除却巫山不是云...</a></p>
-                                <p><span class="author red">依古·比古</span><span class="in"> in </span><a href="">绿水</a></p>
-                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span></p>
+                                <header><a href="">给大家捞个扇贝吃</a></header>
+                                <p><span class="author purple">杰哥</span><span class="in"> In </span><a href="" class="area">学术版</a></p>
+                                <p><time class="publish-date">@04-25 18:24</time><span class="response"> 99回复 </span></p>
                             </div>
                         </div>
                     </div>
@@ -264,9 +308,9 @@
                                 <img src="/static/img/avatar/4.png">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【月刊#233】除却巫山不是云...</a></p>
-                                <p><span class="author red">依古·比古</span><span class="in"> in </span><a href="">绿水</a></p>
-                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span></p>
+                                <header><a href="">这题目样例有问题吧？</a></header>
+                                <p><span class="author blue">啊玮</span><span class="in"> In </span><a href="" class="area">P6474 [NOI Online…</a></p>
+                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 234回复 </span></p>
                             </div>
                         </div>
                         <div class="col-md-6 discuss-col-2">
@@ -274,9 +318,9 @@
                                 <img src="/static/img/avatar/3.png">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【月刊#233】除却巫山不是云...</a></p>
-                                <p><span class="author red">依古·比古</span><span class="in"> in </span><a href="">绿水</a></p>
-                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span></p>
+                                <header><a href="">样例没过，求助</a></header>
+                                <p><span class="author red">比利·海灵顿</span><span class="in"> In </span><a href="" class="area">P1829 [国家集训队…</a></p>
+                                <p><time class="publish-date">@03-25 15:39</time><span class="response"> 5回复 </span></p>
                             </div>
                         </div>
                     </div>
@@ -286,9 +330,9 @@
                                 <img src="/static/img/avatar/1.png">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【月刊#233】除却巫山不是云...</a></p>
-                                <p><span class="author red">依古·比古</span><span class="in"> in </span><a href="">绿水</a></p>
-                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span></p>
+                                <header><a href="">翻译</a></header>
+                                <p><span class="author purple">fffffuck</span><span class="in"> In </span><a href="" class="area">SP4303 AE2A - Dice</a></p>
+                                <p><time class="publish-date">@04-25 15:44</time><span class="response"> 3回复 </span></p>
                             </div>
                         </div>
                         <div class="col-md-6 discuss-col-2">
@@ -296,9 +340,9 @@
                                 <img src="/static/img/avatar/5.png">
                             </div>
                             <div class="discuss-content">
-                                <p><a href="">【月刊#233】除却巫山不是云...</a></p>
-                                <p><span class="author red">依古·比古</span><span class="in"> in </span><a href="">绿水</a></p>
-                                <p><time class="publish-date">@05-20 13:14</time><span class="response"> 9999回复 </span></span></p>
+                                <header><a href="">B题目有更新</a></header>
+                                <p><span class="author red">从人群中钻出一个光头</span><span class="in"> In </span><a href="" class="area">题目总版</a></p>
+                                <p><time class="publish-date">@04-23 08:45</time><span class="response"> 3回复 </span></span></p>
                             </div>
                         </div>
                     </div>

@@ -37,16 +37,95 @@ body a {
     margin-top: 20px;
     margin-left: 20px;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+.slider .carousel-indicators {
+    bottom: -25px;
+}
+
+.slider .carousel-indicators .active {
+    background-color: rgb(52,152,219);
+}
+
+.slider ol {
+    bottom: -25px;
+}
+
+.slider ol li {
+    border: none; 
+    background-color: rgb(127,127,127);
 }
 
 .check-in {
     width: 330px;
     height: 285px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
+
+.check-in {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.check-in .username {
+    color: rgb(14,144,210);
+}
+
+.check-in .content {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.check-in .content p {
+    text-align: center;
+}
+
+.check-in .content .lunar-month, .day{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 18px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(71, 144, 71);
+}
+
+.check-in .title {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.check-in .content .date {
+    margin: 0 20px;
+    font-weight: bolder;
+    font-size: 100px;
+    color: rgb(71, 144, 71);
+}
+
+.check-in .countdown, .check-in-btn {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.check-in .check-in-btn {
+    margin-top: 10px;
+}
+
+
+
 /* **** */
 
 
@@ -284,16 +363,22 @@ body a {
     margin-left: 20px;
 }
 
-.col-1 .recent-discuss .discuss-header {
-
+.col-1 .recent-discuss .discuss-content header {
+    font-size: 13px;
 }
 
 .col-1 .recent-discuss .author {
     font-weight: bold;
+    font-size: 12px;
+}
+
+.col-1 .recent-discuss .area {
+    font-size: 10px;
 }
 
 .col-1 .recent-discuss .publish-date, .response, .in {
     color: rgb(127,127,127);
+    font-size: 10px;
 }
 
 
