@@ -4,6 +4,7 @@
     height: 620px;
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.088);
@@ -103,4 +104,9 @@
 .agree-agreement-text{
     font-size: small;
     margin: 1px 0;
+}
+
+.choice-way-register{
+    display: flex;
+    margin-bottom: .75em;
 }
