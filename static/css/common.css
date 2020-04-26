@@ -45,6 +45,15 @@ body {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        margin-left: 0;
+    }
+    #sidebar {
+        display: none;
+    }
+}
+
 #sidebar .sidebar {
     height: 100%;
     width: 60px;
