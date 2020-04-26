@@ -1,1 +1,24 @@
+name: Sync
 
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Sync to Gitee
+      uses: wearerequired/git-mirror-action@master
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.key }}
+      with:
+          source-repo: "git@github.com:DylanLiu233/GuLuo.git"
+          destination-repo: "git@gitee.com:gu-luo/gu-luo.git"
+
+    - name: Build Gitee Pages
+      uses: yanglbme/gitee-pages-action@master
+      with:
+          gitee-username: ao3
+          gitee-password: ${{ secrets.pass }}
+          gitee-repo: gu-luo/gu-luo
