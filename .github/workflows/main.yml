@@ -1,0 +1,30 @@
+name: Sync
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Sync to Gitee
+      uses: wearerequired/git-mirror-action@master
+      env:
+          # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
+          SSH_PRIVATE_KEY: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCCcWbSJ3yxUnPztHgqtvVKwmCn+6/Ix65VHd+wc2ASMpMHQrpKVMHCZJpWQABfAjEexR9XQZRwNiNDZAxRpvncpumfF76Gd2cHd7qubex9jL0GTr+d9NSd477u5Wl3hdY0LoHnosSS3v3v0u9U7WOGrkohfRUcJlIrr1t77Kk0JD90AitUIztApSsIbgc7Sp+W89tx9dYCt2u+OEZS7e6yJbuL+blaTTVBJd4fJIUGlPC74WIQg8nLvbmtsdXyo3R+KotTzIkBtJVoLrdkef86GvNgotzTnZts9XsX9fERktDTlrAsN4EyEYrjnH/sgAAHNbIleWvl7fotYV+O7JF8YwtkiA1QD7mBhMw9pup3o1cdyMHc6yFvTlC0BsVl1amBbYV8MxKkisFieqXr2B7d9cVvqfz2SFwS3uc/0ov9+QOhV0Gt2X0iWn2/8n636i7Y7BTjmFO6Q4JPGFcdOOfgFHg6aiCjn04tgY57azsxggTfgF6cjsJ8BWI8nSsg9E= 1012717693@qq.com
+      with:
+          # 注意替换为你的 GitHub 源仓库地址
+          source-repo: "git@github.com:DylanLiu233/GuLuo.git"
+          # 注意替换为你的 Gitee 目标仓库地址
+          destination-repo: "git@gitee.com:gu-luo/gu-luo.git"
+
+    - name: Build Gitee Pages
+      uses: yanglbme/gitee-pages-action@master
+      with:
+          # 注意替换为你的 Gitee 用户名
+          gitee-username: ao3
+          # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
+          gitee-password: 123.wawa
+          # 注意替换为你的 Gitee 仓库
+          gitee-repo: gu-luo/gu-luo
