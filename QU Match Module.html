@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>模板</title>
+    <title>首页 - 谷洛 | 计算机教育新生态</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/common.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--CSS-->
+    <style>
+        /*外框样式*/
+        #frame {
+            margin: auto;
+            width: 1200px;
+            border: 2px solid rgb(232, 232, 232);
+            padding: 25px;
+            background-color: white;
+        }
+        /*表格整体样式*/
+        table {
+            width: 100%;
+        }
+        /*表头样式*/
+        th {
+            font-weight: 400;
+            text-align: left;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(232, 232, 232);
+            border-width:2px;
+            padding: 10px 10px 10px 0px;
+        }
+        /*每格样式*/
+        td {
+            font-size: medium;
+            text-align: left;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(232, 232, 232);
+            border-width:1px;
+            padding: 10px 10px 10px 0px;
+        }
+        /*设置为绿色*/
+        #green {
+            color: rgb(82, 196, 26);
+        }
+        /*每行第一个加粗*/
+        tr > td:first-child {
+            font-weight: 550;
+            color: rgb(231, 76, 60);
+        }
+        /*链接样式*/
+        a.tab:link {color:rgb(52, 152, 219);text-decoration:none;}
+        a.tab:visited {color:rgb(52, 152, 219);text-decoration:none;}
+        a.tab:hover {color:rgb(0, 86, 179);text-decoration:none;}
+        a.tab:active {color:rgb(0, 86, 179);text-decoration:none;}
+        a#veri {
+            color: rgb(254, 76, 97);
+            font-weight: bolder;
+        }
+        /*span标签形状*/
+        span#all {
+            font-size: small;
+            border-radius: 2px;
+            color: white;
+            padding: 2px;
+        }
+        /*span标签颜色*/
+        span.yellow {
+            background-color: rgb(255, 193, 22);
+        }
+
+        span.green {
+            background-color: rgb(82, 196, 26);
+        }
+
+        span.greener {
+            background-color: rgb(34, 112, 10);
+        }
+
+        span.purple {
+            background-color: rgb(157, 61, 207);
+        }
+
+        span.red {
+            background-color: rgb(231, 76, 60);
+        }
+
+        span.blue {
+            background-color: rgb(52, 152, 219);
+        }
+        /*认证logo向上偏移*/
+        img.pos {
+            position: relative;
+            top: -2px;
+        }
+        /*最后一行没有底边框*/
+        td#nobotm {
+            border-bottom-style:  none;
+        }
+        /*底部按钮样式*/
+        .button {
+            background-color: white;
+            border: 1px solid rgb(191, 191, 191);
+            border-radius: 5px;
+            font-size: 17px;
+            padding:0px 8px;
+            position: relative;
+            left: 640px;
+        }
+        .button:hover {
+            background-color: white;
+            border: 1px solid rgb(52, 152, 219);
+            border-radius: 5px;
+            font-size: 17px;
+            padding:0px 8px;
+            position: relative;
+            left: 640px;
+        }
+
+        .picbutton {
+            background-color: white;
+            border: 1px solid rgb(191, 191, 191);
+            border-radius: 5px;
+            font-size: 17px;
+            padding:5px 5px;
+            position: relative;
+            left: 640px;
+            top: 8px;
+        }
+        .picbutton:hover {
+            background-color: white;
+            border: 1px solid rgb(52, 152, 219);
+            border-radius: 5px;
+            font-size: 17px;
+            padding:5px 5px;
+            position: relative;
+            left: 640px;
+            top: 8px;
+        }
+        /*底部文字样式*/
+        span.right {
+            position: relative;
+            left: 625px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 这里写主体内容 -->
+    <br><br>
+    <!--框-->
+    <div id="frame">
+        <!--表-->
+        <table>
+            <!--表头-->
+            <tr>
+                <th>状态</th>
+                <th>比赛名称</th>
+                <th>类型</th>
+                <th>起止时间</th>
+                <th>题数</th>
+                <th>出题者（团队）</th>
+            </tr>
+            <tr>
+                <td id="green">未开始</td>
+                <td><a class="tab" href="#">[QkOI#R1] Quark Round 1</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="green" id="all">&nbsp;Rated&nbsp;</span> <br>
+                    <span class="greener" id="all">&nbsp;团队公开赛&nbsp;</span>
+                </td>
+                <td>05-03 14:30 ~ 18:00</td>
+                <td>6题</td>
+                <td><a class="tab" href="#">原子级蒟蒻出题组</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">「EZEC」 Round1 开学信心赛</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="greener" id="all">&nbsp;团队公开赛&nbsp;</span>
+                </td>
+                <td>04-19 14:00 ~ 18:00</td>
+                <td>6题</td>
+                <td><a class="tab" href="#">EZEC出题组-公开赛</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">第二届“传智杯”全国大学生IT技能大赛（决赛同步）</a></td>
+                <td>
+                    <span class="purple" id="all">&nbsp;ACM&nbsp;</span> 
+                    <span class="greener" id="all">&nbsp;团队公开赛&nbsp;</span>
+                </td>
+                <td>04-18 16:30 ~ 19:30</td>
+                <td>5题</td>
+                <td><a class="tab" href="#">传智杯比赛团队</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">【LGR-071】洛谷 4 月月赛 & MdOI Round 2 Div.1</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="green" id="all">&nbsp;Rated&nbsp;</span> <br>
+                    <span class="red" id="all">&nbsp;官方比赛&nbsp;</span>
+                </td>
+                <td>04-12 14:00 ~ 18:00</td>
+                <td>4题</td>
+                <td><a class="tab" href="#">洛谷官方团队</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">【LGR-071】洛谷 4 月月赛 & MdOI Round 2 Div.2</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="green" id="all">&nbsp;Rated&nbsp;</span> <br>
+                    <span class="red" id="all">&nbsp;官方比赛&nbsp;</span>
+                </td>
+                <td>04-12 14:00 ~ 18:00</td>
+                <td>4题</td>
+                <td><a class="tab" href="#">洛谷官方团队</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">「GLR Round 1」洛水之灵 Round 1</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="greener" id="all">&nbsp;团队公开赛&nbsp;</span>
+                </td>
+                <td>04-12 08:00 ~ 13:00</td>
+                <td>6题</td>
+                <td><a class="tab" href="#">HFBZ爱出题</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">第二届“传智杯”全国大学生IT技能大赛（初赛同步）</a></td>
+                <td>
+                    <span class="purple" id="all">&nbsp;ACM&nbsp;</span> 
+                    <span class="greener" id="all">&nbsp;团队公开赛&nbsp;</span>
+                </td>
+                <td>04-11 16:30 ~ 19:30</td>
+                <td>4题</td>
+                <td><a class="tab" href="#">传智杯比赛团队</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">「St-OI」Round1</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="greener" id="all">&nbsp;团队公开赛&nbsp;</span>
+                </td>
+                <td>04-11 14:30 ~ 18:00</td>
+                <td>4题</td>
+                <td><a class="tab" href="#">StOI出题组</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">「Wdoi」Windy Simple Round1</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="greener" id="all">&nbsp;团队公开赛&nbsp;</span>
+                </td>
+                <td>04-06 13:00 ~ 18:00</td>
+                <td>5题</td>
+                <td><a class="tab" href="#">風の少女-SR 出题组</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">Daniel13265 的公开赛</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="blue" id="all">&nbsp;个人公开赛&nbsp;</span>
+                </td>
+                <td>04-05 14:30 ~ 18:30</td>
+                <td>5题</td>
+                <td>
+                    <a class="tab" href="#" id="veri">Daniel13265 </a>
+                    <img src="static/img/quruis/veri.png" class="pos">
+                </td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">赛比节人愚谷洛【(01-)-RGL】</a></td>
+                <td>
+                    <span class="purple" id="all">&nbsp;ACM&nbsp;</span> 
+                    <span class="red" id="all">&nbsp;官方比赛&nbsp;</span>
+                </td>
+                <td>03-29 18:00 ~ 20:30</td>
+                <td>9题</td>
+                <td><a class="tab" href="#">洛谷官方团队</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">WYXkk 的欢乐水题赛</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="blue" id="all">&nbsp;个人公开赛&nbsp;</span>
+                </td>
+                <td>03-29 13:00 ~ 17:00</td>
+                <td>4题</td>
+                <td>
+                    <a class="tab" href="#" id="veri">WYXkk </a>
+                    <img src="static/img/quruis/veri.png" class="pos">
+                </td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">SS 普及组模拟赛</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="greener" id="all">&nbsp;团队公开赛&nbsp;</span>
+                </td>
+                <td>03-28 14:30 ~ 18:00</td>
+                <td>4题</td>
+                <td><a class="tab" href="#">SS 公开赛 出题团</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">【LGR-(-9)】洛谷入门赛 #6</a></td>
+                <td>
+                    <span class="purple" id="all">&nbsp;ACM&nbsp;</span> 
+                    <span class="red" id="all">&nbsp;官方比赛&nbsp;</span>
+                </td>
+                <td>03-15 19:00 ~ 20:30</td>
+                <td>10题</td>
+                <td><a class="tab" href="#">洛谷官方团队</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">cxy 的开学赛</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="blue" id="all">&nbsp;个人公开赛&nbsp;</span>
+                </td>
+                <td>03-14 14:00 ~ 18:00</td>
+                <td>3题</td>
+                <td>
+                    <a class="tab" href="#" id="veri">chenxinyang2006 </a>
+                    <img src="static/img/quruis/veri.png" class="pos">
+                </td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">「SWTR-04」Sweet Round 04</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="greener" id="all">&nbsp;团队公开赛&nbsp;</span>
+                </td>
+                <td>03-13 13:00 ~ 18:00</td>
+                <td>6题</td>
+                <td><a class="tab" href="#">SWTR 出题组</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">【LGR-070】洛谷 3 月月赛 I & EE Round 1 Div.1</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="green" id="all">&nbsp;Rated&nbsp;</span> <br>
+                    <span class="red" id="all">&nbsp;官方比赛&nbsp;</span>
+                </td>
+                <td>03-08 14:00 ~ 17:30</td>
+                <td>4题</td>
+                <td><a class="tab" href="#">洛谷官方团队</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">【LGR-070】洛谷 3 月月赛 I & EE Round 1 Div.2</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="green" id="all">&nbsp;Rated&nbsp;</span> <br>
+                    <span class="red" id="all">&nbsp;官方比赛&nbsp;</span>
+                </td>
+                <td>03-08 14:00 ~ 17:30</td>
+                <td>4题</td>
+                <td><a class="tab" href="#">洛谷官方团队</a></td>
+            </tr>
+            <tr>
+                <td>已结束</td>
+                <td><a class="tab" href="#">「Cnoi2020」Cirno's Easy Round</a></td>
+                <td>
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="green" id="all">&nbsp;Rated&nbsp;</span> <br>
+                    <span class="greener" id="all">&nbsp;团队公开赛&nbsp;</span>
+                </td>
+                <td>03-01 18:30 ~ 22:00</td>
+                <td>6题</td>
+                <td><a class="tab" href="#">氷精の氷屋</a></td>
+            </tr>
+            <tr>
+                <td id="nobotm">已结束</td>
+                <td id="nobotm"><a class="tab" href="#">天下我有的练习赛</a></td>
+                <td id="nobotm">
+                    <span class="yellow" id="all">&nbsp;IOI&nbsp;</span> 
+                    <span class="blue" id="all">&nbsp;个人公开赛&nbsp;</span>
+                </td>
+                <td id="nobotm">03-01 13:00 ~ 17:00</td>
+                <td id="nobotm">6题</td>
+                <td id="nobotm">
+                    <a class="tab" href="#" id="veri">天下我有 </a>
+                    <img src="static/img/quruis/veri2.png" class="pos">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <!--翻页按钮-->
+        <span class="right">共 <b>23</b> 页</span>
+        <input type="image" class="picbutton" src="static/img/quruis/lefte.svg">&nbsp;
+        <input type="image" class="picbutton" src="static/img/quruis/left.svg">&nbsp;
+        <input type="button" class="button" value="1">&nbsp;
+        <input type="button" class="button" value="2">&nbsp;
+        <input type="button" class="button" value="3">&nbsp;
+        <input type="button" class="button" value="4">&nbsp;
+        <input type="button" class="button" value="5">&nbsp;
+        <input type="button" class="button" value="6">&nbsp;
+        <input type="button" class="button" value="7">&nbsp;
+        <input type="image" class="picbutton" src="static/img/quruis/right.svg">&nbsp;
+        <input type="image" class="picbutton" src="static/img/quruis/righte.svg">&nbsp;
+    </div>
+
+    <br><br>
+</body>
+<!-- 以下js文件顺序请勿打乱 -->
+<script src="/static/js/jquery.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/js/common.js"></script>
+<script>
+    /**
+     * 此处是网页公共部分模板, 以下内容主要为调整顶部栏内容, 公共部分的html文件请勿随意修改.
+     * 
+     * header: 选择header, 默认为"header", 可选"header"或"header2". "header"是大多数页面的顶部, "header2"是部分页面的顶部, 例如主页和个人中心.
+     * 
+     * title: 页面标题
+     * 
+     * breadCrumb: 顶部面包屑, 是一个对象数组, 每个对象两个属性, "href"为跳转页面的地址, 建议使用绝对路径, 例如"/index.html","title"为面包屑名称
+     * 
+     * buttons: 按钮组,某些页面存在按钮,是一个对象数组, "href"为跳转页面的地址, "title"为按钮名称, "class"为bootstrap按钮的样式(参考https://v3.bootcss.com/css/#buttons)
+     * 
+     * showData: 布尔值, 是否展示题目数据, 设置为true时会在顶部右侧展示题目数据, (为了方便使用, 题目数据已写死)
+     */
+    new Page({
+        header: "header",
+        title: "比赛列表",
+        breadCrumb: [
+            {
+                href: "#",
+                title: "比赛列表"
+            }
+        ],
+    })
+</script>
+
+</html>
