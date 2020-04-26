@@ -42,7 +42,7 @@
                         验证码信息<br>
                         <input type="text" size="17" placeholder="右侧图形验证码">
                         <img src="https://www.luogu.com.cn/api/verify/captcha">
-                        <input type="text" size="17" placeholder="电子邮箱/手机号">
+                        <input id="email-tel" type="text" size="17" placeholder="电子邮件">
                         <button style="height: 28px; color: white; border: rgb(52,152,219); background-color: rgba(52,152,219, 0.9)">
                             发送验证码</button>
                         <input type="text" size="17" placeholder="6位数字验证码" style="margin:6px 0; width:254px">
@@ -115,7 +115,7 @@
     $(".choice-way").click(function(){
         $(".choice-way").removeClass("choice-active");
         $(this).addClass("choice-active");
-        console.log($(this))
+        $("#email-tel").attr("placeholder",$(this).text())
     })
 </script>
 
