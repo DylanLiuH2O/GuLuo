@@ -15,6 +15,17 @@
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
     <style>
+        html{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        #guluo-main{
+            flex:1;
+        }
         .panel:first-child {
             margin-top: 30px;
         }
@@ -36,6 +47,7 @@
 </head>
 
 <body>
+    <div id="guluo-main">
     <div class="container">
         <div class="panel panel-default">
             <div class="panel-body">
@@ -356,6 +368,7 @@
             </div>
         </div>
 
+    </div>
     </div>
 </body>
 <!-- 以下js文件顺序请勿打乱 -->
