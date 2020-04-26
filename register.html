@@ -24,9 +24,9 @@
             <div class="logo"><img src="/static/img/logo.png"/></div>
             <div class="slogn"><p>在谷洛，享受 Coding 的欢乐！</p></div>
             <div class="choice-way-register">
-                    <div class="email">电子邮件</a></div>
-                    <div class="tel">手机号码</div>
-                </div>
+                <div class="choice-way choice-active">电子邮件</a></div>
+                <div class="choice-way">手机号码</div>
+            </div>
             <div class="login-form">
                 <form action="#" method="POST">
                     <div class="user-name">
@@ -111,6 +111,11 @@
             },
         ],
         showData: true
+    })
+    $(".choice-way").click(function(){
+        $(".choice-way").removeClass("choice-active");
+        $(this).addClass("choice-active");
+        console.log($(this))
     })
 </script>
 

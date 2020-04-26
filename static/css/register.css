@@ -108,5 +108,15 @@
 
 .choice-way-register{
     display: flex;
-    margin-bottom: .75em;
+    margin-bottom: 10px;
+}
+
+.choice-way-register div {
+    flex: 1;
+    text-align: center;
+    font-size: large;
+}
+
+.choice-active{
+    border-bottom: 4px solid rgba(52, 152, 219, 255);
 }
