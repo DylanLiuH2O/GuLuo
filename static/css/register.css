@@ -53,6 +53,7 @@
     border-radius: 3px; 
     padding: 4px 12px;
     font-size: small;
+    width: 100%;
 }
 
 ::-webkit-input-placeholder {
