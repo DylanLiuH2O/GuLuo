@@ -11,7 +11,7 @@ jobs:
     - name: Sync to Gitee
       uses: wearerequired/git-mirror-action@master
       env:
-          SSH_PRIVATE_KEY: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCCcWbSJ3yxUnPztHgqtvVKwmCn+6/Ix65VHd+wc2ASMpMHQrpKVMHCZJpWQABfAjEexR9XQZRwNiNDZAxRpvncpumfF76Gd2cHd7qubex9jL0GTr+d9NSd477u5Wl3hdY0LoHnosSS3v3v0u9U7WOGrkohfRUcJlIrr1t77Kk0JD90AitUIztApSsIbgc7Sp+W89tx9dYCt2u+OEZS7e6yJbuL+blaTTVBJd4fJIUGlPC74WIQg8nLvbmtsdXyo3R+KotTzIkBtJVoLrdkef86GvNgotzTnZts9XsX9fERktDTlrAsN4EyEYrjnH/sgAAHNbIleWvl7fotYV+O7JF8YwtkiA1QD7mBhMw9pup3o1cdyMHc6yFvTlC0BsVl1amBbYV8MxKkisFieqXr2B7d9cVvqfz2SFwS3uc/0ov9+QOhV0Gt2X0iWn2/8n636i7Y7BTjmFO6Q4JPGFcdOOfgFHg6aiCjn04tgY57azsxggTfgF6cjsJ8BWI8nSsg9E= 1012717693@qq.com"
+          SSH_PRIVATE_KEY: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCCcWbSJ3yxUnPztHgqtvVKwmCn+6/Ix65VHd+wc2ASMpMHQrpKVMHCZJpWQABfAjEexR9XQZRwNiNDZAxRpvncpumfF76Gd2cHd7qubex9jL0GTr+d9NSd477u5Wl3hdY0LoHnosSS3v3v0u9U7WOGrkohfRUcJlIrr1t77Kk0JD90AitUIztApSsIbgc7Sp+W89tx9dYCt2u+OEZS7e6yJbuL+blaTTVBJd4fJIUGlPC74WIQg8nLvbmtsdXyo3R+KotTzIkBtJVoLrdkef86GvNgotzTnZts9XsX9fERktDTlrAsN4EyEYrjnH/sgAAHNbIleWvl7fotYV+O7JF8YwtkiA1QD7mBhMw9pup3o1cdyMHc6yFvTlC0BsVl1amBbYV8MxKkisFieqXr2B7d9cVvqfz2SFwS3uc/0ov9+QOhV0Gt2X0iWn2/8n636i7Y7BTjmFO6Q4JPGFcdOOfgFHg6aiCjn04tgY57azsxggTfgF6cjsJ8BWI8nSsg9E= 1012717693@qq.com
       with:
           source-repo: "git@github.com:DylanLiu233/GuLuo.git"
           destination-repo: "git@gitee.com:gu-luo/gu-luo.git"
