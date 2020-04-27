@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container list-container">
         <div id="search-problem">
             <div id="search-key" class="line">
                 <div id="biaoti">查找题目</div>
@@ -26,9 +26,70 @@
                 <button type="button" class="btn btn-primary">搜索</button>
                 <input type="checkbox"/><span id="choice">搜索题目内容</span>
             </div>
-            <p class="line" style="color:grey">共计<span style="color:black">5443</span>条结果</p>
+
+            <div class="search-choice">
+                <div class="belong-question-bank">
+                    <b>所属题库</b>
+                    <ul class="qb-name">
+                        <li>主题库</li>
+                        <li>CodeForces</li>
+                        <li>SPOJ</li>
+                        <li>AtCoder</li>
+                        <li>UVA</li>
+                    </ul>
+                </div>
+
+                <div class="question-difficulty">
+                    <b>题目难度</b>
+                    <ul class="difficulty">
+                        <li>全部</li>
+                        <li>入门</li>
+                        <li>普及-</li>
+                        <li>普及/提高-</li>
+                        <li>普及+/提高</li>
+                        <li>提高+/省选-</li>
+                        <li>省选/NOI-</li>
+                        <li>NOI/NOI+/CTSC</li>
+                    </ul>
+                </div>
+
+                <div class="search-label">
+                    <b style="padding-right:40px;">算法标签</b>
+                    <input type="text" class="form-control" placeholder="输入关键字筛选标签">
+                </div>
+
+                <div class="other-choice">
+                    <b>其他选项</b>
+
+                </div>
+            </div>
+            
+            <div class="search-other">
+                <p style="color:grey">共计<span style="color:black">5443</span>条结果</p>
+                <p style="color: rgb(52,152,219);">清除所有筛选条件</p>
+            </div>
+        </div>
+
+        <div class="interval"></div>
+
+        <div class="problem-list">
+            <div class="header-wrap">
+                <span>状态</span>
+                <span>题号</span>
+                <span>题目名称</span>
+                <span>标签</span>
+                <span>难度</span>
+                <span>通过率</span>
+            </div>
+
+            <div class="row">
+                <img src="/static/img/grey-line.svg" class="icon">
+            </div>
+
         </div>
     </div>
+
+    
     
 
 

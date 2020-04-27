@@ -1,15 +1,15 @@
-.container {
+.list-container {
     margin-top: 30px;
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
 #search-problem{
     background-color: white;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .line {
-    margin: 0 40px 20px;
+    margin: 20px 0px 20px;
 }
 
 #search-key{
@@ -31,4 +31,51 @@
 
 #search-key > [type="checkbox"]{
     width: 50px;
+}
+
+.search-choice>div{
+    font-size: 16px;
+    display: flex;
+}
+
+.search-choice ul{
+    list-style: none;
+    display: block;
+}
+
+.search-choice ul>li{
+    display: inline-block;
+    padding-right:30px;
+}
+
+.search-label input{
+    height: 25px;
+    width: 200px;
+}
+
+.search-choice b{
+    padding-bottom: 20px;
+}
+
+.search-other{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.interval{
+    width: auto;
+    height: 20px;
+    background-color: rgb(239,239,239);
+}
+
+.problem-list{
+    background-color: white;
+    padding: 20px;
+}
+
+.icon{
+    width: 21px;
+    height: 16px;
+    opacity: 0.7;
 }
