@@ -79,3 +79,99 @@
     height: 16px;
     opacity: 0.7;
 }
+
+/* .row a{
+    padding: 8px 6px 8px 0;
+} */
+
+.header-wrap{
+    border-bottom: 2px solid gainsboro !important;
+}
+
+.p-row {
+    border-bottom: 1px solid gainsboro;
+}
+
+.p-row, .header-wrap {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.p-status, .p-pass {
+    flex: 1;
+}
+
+.p-num, .p-difficulty{
+    flex: 2;
+}
+
+.p-difficulty, .p-pass{ 
+    text-align: center;
+}
+
+.p-tags {
+    flex: 2;
+}
+
+.p-name {
+    flex: 8;
+}
+
+.p-name>a{
+    color: #3498db;
+}
+
+.p-name>a:hover{
+    text-decoration: none;
+    color: #336699; 
+}
+
+.progress, .p-pass {
+    height: 20px;
+    margin-bottom: 0;
+}
+
+.p-row{
+    font-size: medium;
+}
+
+.span-tag{
+    font-size: 14px;
+    border-radius: 2px;
+    padding:2px 6px;
+    color: white;
+    margin: 0 2px; 
+}
+
+.p-pink {
+    background-color: #FE4c61;
+}
+
+.p-red {
+    background-color: #e74c3c;
+}
+
+.p-orange {
+    background-color:#f39c11;
+}
+
+.p-yellow {
+    background-color:#ffc116;
+}
+
+.p-green {
+    background-color: #52c41a;
+}
+
+.p-blue {
+    background-color: #3498db;
+}
+
+.p-purple{
+    background-color: #9d3dcf;
+}
+
+.p-hard-blue{
+    background-color: #0e1d69;
+}
