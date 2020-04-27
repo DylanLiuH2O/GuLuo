@@ -22,13 +22,171 @@
             flex-direction: column;
             height: 100%;
         }
+        .top-container {
+            display: flex;
+        }
+        .top-right {
+            flex: 1;
+            margin-left: 15px;
+            height: auto;
+        }
+        .g-content {
+            display: flex;
+        }
+        .g-content:first-child {
+            margin-top: 20px;
+        }
+        .g-svg {
+            width: 50px;
+            height: 50px;
+            
+        }
+        .fa-secondary {
+            fill: #3498db;
+        }
+        .fa-primary {
+            fill: #89d1f5;
+        }
+        .upload-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #eee;
+            background-color: #FAFAFA;
+            height: 130px;
+            width: 130px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .upload-box:hover {
+            border-color: #89d1f5;
+        }
+        .right-box {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .tips{
+            display: flex;
+            flex: 1;
+            
+        }
+        .tips>div {
+            flex: 1;
+        }
+        .tips ul{
+            margin: 10px 0;
+        }
+        label {
+            font-weight: normal;
+        }
+        .used {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .used, a{
+            font-size: 16px;
+            line-height: 32px;
+        }
+        a{
+            color: #3498db;
+        }
+        a:hover{
+            text-decoration: none;
+            color: #3377cc;
+        }
+        .uploaded {
+            flex:1; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .uploaded svg {
+            margin: 40px 0;
+        }
+        @media screen and (max-width: 800px) {
+            .top-container {
+                flex-direction: column-reverse;
+            }
+            .top-right {
+                margin-left: 0;
+            }
+        }
     </style>
 </head>
 
 <body>
     <!-- 这里写主体内容 -->
     <div id="guluo-main">
+        <div class="g-content container top-container">
+            <div class="panel panel-default" style="flex: 2">
+                <div class="panel-body" style="display: flex;">
+                    <div class="upload-box" >
+                        <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="images" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="g-svg"><g data-v-688958d9="" data-v-796309f8="" class="fa-group"><path data-v-688958d9="" data-v-796309f8="" fill="currentColor" d="M424.49 120.48a12 12 0 0 0-17 0L272 256l-39.51-39.52a12 12 0 0 0-17 0L160 272v48h352V208zM64 336V128H48a48 48 0 0 0-48 48v256a48 48 0 0 0 48 48h384a48 48 0 0 0 48-48v-16H144a80.09 80.09 0 0 1-80-80z" class="fa-secondary"></path><path data-v-688958d9="" data-v-796309f8="" fill="currentColor" d="M528 32H144a48 48 0 0 0-48 48v256a48 48 0 0 0 48 48h384a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zM208 80a48 48 0 1 1-48 48 48 48 0 0 1 48-48zm304 240H160v-48l55.52-55.52a12 12 0 0 1 17 0L272 256l135.52-135.52a12 12 0 0 1 17 0L512 208z" class="fa-primary"></path></g></svg>
+                        <span>点此处选择图片</span>
+                    </div>
+                    <div class="right-box">
+                        <div class="tips">
+                            <div>
+                                <b>高级空间</b>
+                                <ul>
+                                    <li>图片大小大于500k</li>
+                                    <li>无水印</li>
+                                </ul>
+                                <span>满足任意一条将占用高级空间</span>
+                            </div>
+                            <div>
+                                <b>上传须知</b>
+                                <ul>
+                                    <li>上传的图片必须符合法律与社会道德</li>
+                                    <li>图床主要供洛谷站内使用</li>
+                                    <li>在合适的地方插入图片即可引用</li>
+                                    <li>可以上传少量的签名图</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <b>水印：</b>
+                            
+                            <input type="radio" id="wsy" name="type"/>
+                            <label for="wsy">无水印</label>
 
+                            <input type="radio" id="logo" name="type" checked/>
+                            <label for="logo">logo</label>
+
+                            <input type="radio" id="logoname" name="type"/>
+                            <label for="logoname">logo@昵称</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default top-right">
+                <div class="panel-body">
+                    <div class="used">
+                        <div>已使用高级空间</div>
+                        <div>0B / 10.00MB</div>
+                    </div>
+                    <div class="used">
+                        <div>已上传总数</div>
+                        <div>0张</div>
+                    </div>
+                    <a href="javascript: void(0)">
+                        <svg style="width: 16px;height:16px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-file-alt fa-w-12"><path data-v-688958d9="" data-v-303bbf52="" fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z" class=""></path></svg>
+                        空间使用细则
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="g-content container">
+            <div class="panel panel-default uploaded">
+                <div class="panel-body">
+                    <svg style="width: 120px; height:120px" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="comment-alt-exclamation" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-comment-alt-exclamation fa-w-16 fa-swap-opacity"><g data-v-e5911174="" data-v-796309f8="" class="fa-group"><path data-v-e5911174="" data-v-796309f8="" fill="currentColor" d="M448 0H64A64.06 64.06 0 0 0 0 64v288a64.06 64.06 0 0 0 64 64h96v84a12 12 0 0 0 19.1 9.7L304 416h144a64.06 64.06 0 0 0 64-64V64a64.06 64.06 0 0 0-64-64zM256 336a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm38.2-238.4l-12.8 128a16 16 0 0 1-15.9 14.4h-19a16 16 0 0 1-15.9-14.4l-12.8-128A16.06 16.06 0 0 1 233.7 80h44.6a16 16 0 0 1 15.9 17.6z" class="fa-secondary"></path><path data-v-e5911174="" data-v-796309f8="" fill="currentColor" d="M256 272a32 32 0 1 0 32 32 32 32 0 0 0-32-32zm22.3-192h-44.6a16.06 16.06 0 0 0-15.9 17.6l12.8 128a16 16 0 0 0 15.9 14.4h19a16 16 0 0 0 15.9-14.4l12.8-128A16 16 0 0 0 278.3 80z" class="fa-primary"></path></g></svg>
+                    <div style="text-align: center;">暂无已上传的图片</div> 
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <!-- 以下js文件顺序请勿打乱 -->
@@ -36,19 +194,6 @@
 <script src="/bootstrap/js/bootstrap.min.js"></script>
 <script src="/static/js/common.js"></script>
 <script>
-    /**
-     * 此处是网页公共部分模板, 以下内容主要为调整顶部栏内容, 公共部分的html文件请勿随意修改.
-     * 
-     * header: 选择header, 默认为"header", 可选"header"或"header2". "header"是大多数页面的顶部, "header2"是部分页面的顶部, 例如主页和个人中心.
-     * 
-     * title: 页面标题
-     * 
-     * breadCrumb: 顶部面包屑, 是一个对象数组, 每个对象两个属性, "href"为跳转页面的地址, 建议使用绝对路径, 例如"/index.html","title"为面包屑名称
-     * 
-     * buttons: 按钮组,某些页面存在按钮,是一个对象数组, "href"为跳转页面的地址, "title"为按钮名称, "class"为bootstrap按钮的样式(参考https://v3.bootcss.com/css/#buttons)
-     * 
-     * showData: 布尔值, 是否展示题目数据, 设置为true时会在顶部右侧展示题目数据, (为了方便使用, 题目数据已写死)
-     */
     new Page({
         header: "header",
         title: "图床",
@@ -57,20 +202,7 @@
                 href: "#",
                 title: "图片上传"
             }
-        ],
-        buttons: [
-            {
-                href: "#",
-                title: "提交题目",
-                class: "btn-primary"
-            },
-            {
-                href: "#",
-                title: "加入收藏",
-                class: "btn-default"
-            },
-        ],
-        showData: true
+        ]
     })
 </script>
 
