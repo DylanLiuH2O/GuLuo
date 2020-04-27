@@ -165,6 +165,108 @@ h3{
 {
     display: inline;
 }
+.qwe
+{
+    margin-bottom: 0;
+    display: flex;
+    align-items: baseline;
+}
+.e
+{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    list-style: none;
+    display: block;
+}
+.w
+{
+    display: inline-block;
+    margin-left: 1em;
+    padding: 0.063em 0.5em;
+    transition: .3s ease all;
+    border-radius: 3px;
+}
+.rt{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.yu
+{
+    
+        color: black;
+        text-decoration: none;
+
+}
+.op
+{
+    cursor: default;
+    color: #fff;
+}
+.oi
+{
+    font-size: 1.125em;
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 1.2;
+    color: inherit;
+}
+.kuai
+{
+    display: block;
+}
+.kuai1
+{
+    position: relative;
+    display: inline-block;
+}
+.test-case{
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+    margin: 0.2em;
+    height: 7em;
+    width: 7em;
+    padding: 0;
+    color: #fff;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.id{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6px;
+    font-size: .65em;
+}
+.avatar-small {
+    margin-right: .2em;
+    width: 2em;
+    height: 2em;
+    vertical-align: -.6em;
+    border-radius: 50%;
+}
+.kl
+{
+    padding-bottom: 15px;
+}
+
+
 
 
 
