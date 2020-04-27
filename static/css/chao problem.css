@@ -1,0 +1,200 @@
+.first-face
+{
+    padding-left: 4em;
+    padding-right: 4em;
+    background-color: rgb(239, 239, 239);
+    flex: 1;
+    display: block;
+}
+
+.search
+{
+    margin-top: 2em;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+   
+
+    
+
+}
+.side {
+    width: calc(33.33% - .5em);
+    float: right;
+    box-sizing: border-box;
+    display: block;
+}
+.card
+{
+    padding: 1.3em;
+    display: block;
+    margin-bottom: 1.3em;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    box-sizing: border-box;
+
+}
+.row
+{
+    margin-right: -150px;
+    margin-left: 20px;
+    margin-bottom: 1em;
+    display: block;
+}
+.each
+{
+    margin-bottom: var(--info-row-margin-bottom, 1em);
+    display: flex;
+    align-items: center;
+}
+.first
+{
+    flex: 1 0 auto;
+}
+.wrap
+{
+    display: inline-flex;
+    float: inline-start;
+    align-items: center;
+    max-width: 100%;
+}
+.m
+{
+
+    display: inline-block;
+    width: calc(66.67% - .5em);
+    box-sizing: border-box;
+}
+.hide1>span{
+    display: inline-block;
+}
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+   
+}
+.svg-inline--fa {
+        display: inline-block;
+        font-size: inherit;
+        height: 1em;
+        overflow: visible;
+        vertical-align: -0.125em;
+}
+.hide1{
+    text-decoration:none;
+    float: right;
+    
+}
+.ti{
+  display: block;  
+}
+.ti1
+{
+    margin-top: 0;
+    font-size: 1.25em;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.input
+{
+    flex: 1;
+}
+.simple
+{
+
+    overflow: hidden;
+    display: flex;
+    margin-top: 1.5em;
+    
+
+}
+.fuzhi
+{
+        display: block;
+        float: right;
+        font-size: .8em;
+        padding: 0 5px;
+        border-radius: 5px;
+     
+}
+pre{
+    margin: .5em 0;
+    padding: .3em .5em;
+    border: #ddd solid 1px;
+    background: #f8f8f8;
+    border-radius: 3px;
+    overflow: auto;
+    font-size: .875em;
+    font-family: monospace;
+}
+.output
+{
+        margin-left: .5em;
+        flex: 1;
+        overflow: hidden;
+}
+.ti2{
+    margin-top: 1.5em;
+}
+/*.marked
+{
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+}*/
+.code
+{
+    white-space: pre;
+    border: none;
+}
+h3{
+    font-size: 1.125em;
+    font-weight: normal;
+}
+.ex
+{
+    text-align: center;
+    font-size: 0.875em;
+    display: block;
+}
+.lfe-h3
+{
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
