@@ -19,6 +19,6 @@ jobs:
     - name: Build Gitee Pages
       uses: yanglbme/gitee-pages-action@master
       with:
-          gitee-username: ao3
+          gitee-username: wao3
           gitee-password: ${{ secrets.pass }}
           gitee-repo: gu-luo/gu-luo
