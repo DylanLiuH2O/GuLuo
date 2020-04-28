@@ -27,47 +27,66 @@
                 <input type="checkbox"/><span id="choice">搜索题目内容</span>
             </div>
 
-            <div class="search-choice">
-                <div class="belong-question-bank">
-                    <b>所属题库</b>
-                    <ul class="qb-name">
-                        <li>主题库</li>
-                        <li>CodeForces</li>
-                        <li>SPOJ</li>
-                        <li>AtCoder</li>
-                        <li>UVA</li>
-                    </ul>
+            <div class="hide-box">
+                <div class="search-choice">
+                    <div class="belong-question-bank">
+                        <b>所属题库</b>
+                        <ul class="show-ul">
+                            <li>主题库</li>
+                            <li>CodeForces</li>
+                            <li>SPOJ</li>
+                            <li>AtCoder</li>
+                            <li>UVA</li>
+                        </ul>
+                    </div>
+    
+                    <div class="question-difficulty">
+                        <b>题目难度</b>
+                        <ul class="show-ul">
+                            <li>全部</li>
+                            <li>入门</li>
+                            <li>普及-</li>
+                            <li>普及/提高-</li>
+                            <li>普及+/提高</li>
+                            <li>提高+/省选-</li>
+                            <li>省选/NOI-</li>
+                            <li>NOI/NOI+/CTSC</li>
+                        </ul>
+                    </div>
+    
+                    <div class="search-label">
+                        <b style="padding-right:40px;">算法标签</b>
+                        <input type="text" class="form-control" placeholder="输入关键字筛选标签">
+                    </div>
+    
+                    <div class="other-choice">
+                        <b>其他选项</b>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="question-difficulty">
-                    <b>题目难度</b>
-                    <ul class="difficulty">
-                        <li>全部</li>
-                        <li>入门</li>
-                        <li>普及-</li>
-                        <li>普及/提高-</li>
-                        <li>普及+/提高</li>
-                        <li>提高+/省选-</li>
-                        <li>省选/NOI-</li>
-                        <li>NOI/NOI+/CTSC</li>
-                    </ul>
-                </div>
-
-                <div class="search-label">
-                    <b style="padding-right:40px;">算法标签</b>
-                    <input type="text" class="form-control" placeholder="输入关键字筛选标签">
-                </div>
-
-                <div class="other-choice">
-                    <b>其他选项</b>
-
-                </div>
+                
+                
             </div>
-            
             <div class="search-other">
                 <p style="color:grey">共计<span style="color:black">5443</span>条结果</p>
-                <p style="color: rgb(52,152,219);">清除所有筛选条件</p>
+                <p class="hide-box" style="color: rgb(52,152,219);">清除所有筛选条件</p>
             </div>
+            <div id="action-box">
+                <span>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg>
+                    显示高级搜索选项
+                </span>
+            </div>
+
         </div>
 
         <div class="interval"></div>
@@ -83,12 +102,6 @@
             </div>
         </div>
     </div>
-
-    
-    
-
-
-    
 </body>
 <!-- 以下js文件顺序请勿打乱 -->
 <script src="/static/js/jquery.min.js"></script>
@@ -116,7 +129,7 @@
         {status: 0, num: "P1081", name: "开车旅行", tags: ["倍增"], difficulty: 6},
         {status: 0, num: "P1763", name: "蓄水池", tags: ["动态规划,动规,dp","搜索","记忆式搜索","状态压缩,状压"], difficulty: 7},
         {status: 0, num: "P2000", name: "拯救世界", tags: ["数论,数学","高精"], difficulty: 7},
-        {status: 1, num: "P1058", name: "立体图", tags: ["模拟","字符串","二分答案","枚举,暴力"], difficulty: 3},
+        {status: 1, num: "P1062", name: "数列", tags: ["数论,数学","进制"], difficulty: 3},
         {status: 0, num: "P1000", name: "超级玛丽游戏", tags: ["字符串"], difficulty: 1},
         {status: 1, num: "P1001", name: "A+B Problem", tags: ["模拟"], difficulty: 1},
         {status: 0, num: "P1002", name: "过河卒", tags: ["动态规划,动规,dp"], difficulty: 2},
@@ -127,7 +140,7 @@
         {status: 0, num: "P1081", name: "开车旅行", tags: ["倍增"], difficulty: 6},
         {status: 0, num: "P1763", name: "蓄水池", tags: ["动态规划,动规,dp","搜索","记忆式搜索","状态压缩,状压"], difficulty: 7},
         {status: 0, num: "P2000", name: "拯救世界", tags: ["数论,数学","高精"], difficulty: 7},
-        {status: 1, num: "P1058", name: "立体图", tags: ["模拟","字符串","二分答案","枚举,暴力"], difficulty: 3}
+        {status: 1, num: "P1062", name: "数列", tags: ["数论,数学","进制"], difficulty: 3}
     ]
 
     for (let i of pList) {
@@ -185,7 +198,22 @@
                         </div>
                     </div>
                 </div>`)
+        
+        let hide = true;
+        $(".hide-box").hide()
+        $("#action-box span").click(function(){
+            hide = !hide
+            if(hide){
+                $(".hide-box").hide()
+                $("#action-box span").html(`<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg>
+                    显示高级搜索选项`)
+            } 
+            else {
+                $(".hide-box").show()
+                $("#action-box span").html(`<svg data-v-e4b7c2ca="" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-up fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" class=""></path></svg>
+                    隐藏高级搜索选项`)
+            } 
+        })
     }
 </script>
-
 </html>

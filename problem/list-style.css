@@ -38,7 +38,7 @@
     display: flex;
 }
 
-.search-choice ul{
+.show-ul{
     list-style: none;
     display: block;
 }
@@ -174,4 +174,25 @@
 
 .p-hard-blue{
     background-color: #0e1d69;
+}
+
+#action-box {
+    
+    text-align: center;
+}
+
+#action-box>span {
+    cursor: pointer;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+#action-box>span:hover {
+    color: black;
+}
+#action-box>span>svg {
+    width: 14px;
+    height: 14px;
 }
