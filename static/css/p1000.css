@@ -1,0 +1,50 @@
+.problem-container{
+    display: flex;
+}
+
+.problem{
+    line-height: 2;
+    background-color: white;
+    padding: 20.8px;
+    margin: 33px 0;
+}
+
+.problem-details h1{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+p{
+    font-size: 16px;
+}
+
+.problem-description-string{
+    background-color: #f0f0f0;
+}
+
+pre{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.problem-details{
+    margin-right: 20px;
+}
+
+.problem-info{
+    height: 200px;
+    width: 400px;
+    font-size: 30px;
+}
+
+.line1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.provider{
+    color: #9d3dcf;
+    font-weight: bold;
+    
+}
