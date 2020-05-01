@@ -31,11 +31,14 @@ pre{
     margin-right: 20px;
 }
 
+.problem-side{
+    font-size: 18px;
+    line-height: 2.5;
+}
+
 .problem-info{
     height: 210px;
     width: 400px;
-    font-size: 18px;
-    line-height: 2.5;
 }
 
 .line{
@@ -60,4 +63,9 @@ pre{
 
 .problem-info a:hover{
     text-decoration: none;
+}
+
+.problem-label{
+    width: 400px;
+    height: 200px;
 }
