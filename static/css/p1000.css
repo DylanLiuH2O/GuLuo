@@ -32,12 +32,13 @@ pre{
 }
 
 .problem-info{
-    height: 200px;
+    height: 210px;
     width: 400px;
-    font-size: 30px;
+    font-size: 18px;
+    line-height: 2.5;
 }
 
-.line1{
+.line{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -47,4 +48,16 @@ pre{
     color: #9d3dcf;
     font-weight: bold;
     
+}
+
+.problem-info svg{
+    height: 17px;
+}
+
+.problem-info a{
+    color: #3498db;
+}
+
+.problem-info a:hover{
+    text-decoration: none;
 }
