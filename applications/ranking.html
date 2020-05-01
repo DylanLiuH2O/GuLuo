@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>图床</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/common.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .panel{
+            margin-top: 20px ;
+        }
+        .panel .l-row {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+        .panel .h {
+            border-bottom: 2px solid #eee;
+        }
+        .panel .l-row:last-child {
+            border-bottom: none;
+        }
+        .panel .l-row img{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+        .panel .l-row .name{
+            flex: 6;
+        }
+        /* .panel .l-row div{
+            margin-right: 16px;
+            min-width: 4em;
+            text-align: center;
+            padding: 5px 0;
+        }
+        .panel .l-row .date{
+            min-width: 8em;
+        }
+        .panel .l-row .name{
+            text-align: left;
+        } */
+
+        .panel .l-row div{
+            flex: 1;
+            text-align: center;
+            padding: 8px 0;
+        }
+        .panel .l-row .date{
+            flex: 2;
+            font-weight: normal;
+        }
+        .panel .l-row .rank{
+            flex: 0.5;
+            font-weight: normal;
+        }
+        .panel .l-row .avatar{
+            flex: 0.5;
+            margin-right: 1em;
+            
+        }
+        .panel .l-row .name{
+            text-align: left;
+        }
+        .bold {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel panel-default panel-body">
+            <div class="l-row h">
+                <div class="rank"></div>
+                <div class="avatar"></div>
+                <div class="name"></div>
+                <div>总分</div>
+                <div>基础</div>
+                <div>社区</div>
+                <div>比赛</div>
+                <div>练习</div>
+                <div>成就</div>
+                <div class="date">咕值达成时间</div>
+            </div>
+            <div id="list"></div>
+            <nav aria-label="Page navigation" style="text-align: right;">
+                <ul class="pagination" style="margin-bottom: 0;">
+                    <li>
+                        <a href="javascript:void(0)" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)">5</a></li>
+                    <li>
+                        <a href="javascript:void(0)" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</body>
+<!-- 以下js文件顺序请勿打乱 -->
+<script src="/static/js/jquery.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/js/common.js"></script>
+<script>
+    new Page({
+        header: "header",
+        title: "估值排名",
+        breadCrumb: [
+            {
+                href: "#",
+                title: "估值排名"
+            }
+        ]
+    })
+    let list = [
+        {avatar: 42156, name: "Fee_cle6418", score: [441,100,93,100,88,60], date: "2020-04-27"},
+        {avatar: 65363, name: "一扶苏一", score: [436,100,100,100,76,60], date: "2020-04-06"},
+        {avatar: 6813, name: "mrsrz", score: [431,100,88,100,83,60], date: "2020-04-20"},
+        {avatar: 10703, name: "小粉兔", score: [426,100,74,100,52,100], date: "2020-04-27"},
+        {avatar: 115864, name: "NaCly_Fish", score: [424,100,100,100,74,50], date: "2020-04-27"},
+        {avatar: 221955, name: "AK新手村", score: [422,100,70,100,92,60], date: "2020-04-27"},
+        {avatar: 100544, name: "xht37", score: [421,100,90,100,61,70], date: "2020-04-20"},
+        {avatar: 100285, name: "Froggy", score: [415,100,73,100,82,60], date: "2020-04-27"},
+        {avatar: 115194, name: "ET2006", score: [414,100,78,100,76,60], date: "2020-04-27"},
+        {avatar: 149656, name: "jiangly", score: [413,100,48,100,65,60], date: "2020-04-27"},
+        {avatar: 146478, name: "用户未知", score: [411,100,70,100,91,50], date: "2020-04-27"},
+        {avatar: 22030, name: "StudyingFather", score: [409,100,100,100,79,30], date: "2020-04-27"},
+        {avatar: 174045, name: "FZzzz", score: [406,100,70,100,76,60], date: "2020-04-27"},
+        {avatar: 118365, name: "♗Wendigo♝", score: [405,100,70,100,85,50], date: "2020-04-27"},
+        {avatar: 113546, name: "ix35", score: [403,100,77,100,66,60], date: "2020-04-27"},
+        {avatar: 120074, name: "世界第一肥宅BF", score: [403,100,73,100,80,50], date: "2020-04-27"},
+        {avatar: 208081, name: "⚡DAG⚡", score: [401,100,70,100,81,50], date: "2020-04-27"},
+        {avatar: 110985, name: "辰星凌", score: [401,100,71,100,70,60], date: "2020-04-27"},
+        {avatar: 60990, name: "Karry5307", score: [399,100,83,100,66,50], date: "2020-04-27"},
+        {avatar: 38370, name: "M_seа", score: [398,100,85,100,53,60], date: "2020-04-27"}
+    ]
+    for(let i=0; i<list.length; i++) {
+        let it = list[i]
+        $("#list")
+        .append(`<div class="l-row bold">
+                    <div class="rank">#${i+1}</div>
+                    <div class="avatar">
+                        <img src="https://cdn.luogu.com.cn/upload/usericon/${it.avatar}.png" alt="">
+                    </div>
+                    <div class="name red">${it.name}</div>
+                    <div class="score">${it.score[0]}</div>
+                    <div class="score">${it.score[1]}</div>
+                    <div class="score">${it.score[2]}</div>
+                    <div class="score">${it.score[3]}</div>
+                    <div class="score">${it.score[4]}</div>
+                    <div class="score">${it.score[5]}</div>
+                    <div class="date">${it.date}</div>
+                </div>`)
+    }
+    $(".score").each(function(){
+        let score = parseInt($(this).text())
+        let color
+        if(score >= 80) {
+            color = "green"
+        } else if (score >= 60) {
+            color = "yellow"
+        } else {
+            color = "orange"
+        }
+        $(this).addClass(color)
+    })
+</script>
+
+</html>
