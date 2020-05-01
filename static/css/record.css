@@ -306,7 +306,7 @@ a
     display: flex;
     flex-direction: column;
 }
-.avatar
+.search .avatar
 {
     padding: 10px;
 }
