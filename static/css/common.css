@@ -24,7 +24,11 @@ body {
     color: rgb(82, 196, 26);
 }
 
-.yellow{
+.yellow {
+    color: rgb(250, 219, 20);
+}
+
+.orange{
     color: rgb(243, 156, 17);
 }
 
@@ -45,13 +49,52 @@ body {
     margin-right: 10px;
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        margin-left: 0;
-    }
-    #sidebar {
-        display: none;
-    }
+#header .u1 {
+    position: absolute;
+    top: 0;
+    right: 4em;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: .5em 1em;
+    border-radius: 0 0 5px 5px;
+}
+
+#header .user-box .search-wrap {
+    display: inline-block;
+    width: 0em;
+    transition: width .15s ease;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: .7em;
+}
+
+#header .user-box .search-wrap input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 2em;
+}
+
+#header .user-box span{
+    cursor: pointer;
+}
+
+#header .user-box a, .avatar{
+    margin-left: .7em;
+    color: #333;
+}
+#header .user-box a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+#header .user-box img{
+    width: 1em;
+    height: 1em;
+}
+
+#header .user-box .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
 #sidebar .sidebar {
@@ -119,6 +162,12 @@ body {
     color: #fff;
     padding-bottom: 20px;
 }
+#header .nav>li {
+    display: inline-block;
+}
+#header .nav {
+    margin: 0;
+}
 #header .header-main .bread-crumb {
     color: #ccc;
     font-size: small;
@@ -178,6 +227,11 @@ body {
     margin-left: 20px;
 }
 
+#footer .footer .container .logo-slogan {
+    display: flex; 
+    align-items: center;
+}
+
 #footer .footer .container .links {
     text-align: right;
     flex: 1;
@@ -190,4 +244,34 @@ body {
 }
 #footer .footer .container a:hover{
     color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin-left: 0;
+    }
+    #sidebar {
+        display: none;
+    }
+    .user-box {
+        display: none;
+    }
+
+    #header .nav {
+        text-align: right;
+    }
+
+    #footer .footer .container {
+        justify-content: center;
+    }
+
+    #footer .footer .container .links {
+        text-align: center;
+    }
+
+    #footer .footer .container .logo-slogan {
+        display: none;
+    }
+
+    
 }

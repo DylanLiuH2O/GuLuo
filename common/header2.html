@@ -1,20 +1,30 @@
 <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid" style="display: flex; align-items: center;">
-        <div class="navbar-header" style="margin-left: 100px; margin-right: 20px;">
+    <div class="container" style="display: flex; align-items: center;">
+        <div class="navbar-header">
             <img src="/static/img/logo.png" width="94" height="48"/>
         </div>
-        <div class="nav navbar-nav">
+        <div class="nav navbar-nav" style="flex:1">
             <li><a href="">洛谷网校</a></li>
             <li><a href="">洛谷有题</a></li>
         </div>
-        <div style="flex:1"></div>
-        <span class="glyphicon glyphicon-search"></span>
-        <span class="glyphicon glyphicon-envelope"></span>
-        <span class="glyphicon glyphicon-flag"></span>
-        <div class="user-nav" style="margin-right: 100px;">
-            <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-user"></span>User
-            </button>
+        <div class="user-box u2">
+            <div class="search-wrap">
+                <input class="form-control" type="text"/>
+            </div>
+            <span>
+                <img id="s" src="/static/img/user-nav/search.svg" alt="">
+            </span>
+            <a id="message" href="#">
+                <img src="/static/img/user-nav/message.svg" alt="">
+            </a>
+            <a id="bell" href="">
+                <img src="/static/img/user-nav/bell.svg" alt="">
+            </a>
+            <span>
+                <img class="avatar" src="https://cdn.luogu.com.cn/upload/usericon/221955.png" alt="">
+            </span>
         </div>
+        <script src="/static/js/jquery.cookie.min.js"></script>
+        <script src="/static/js/head.js"></script>
     </div>
 </nav>
