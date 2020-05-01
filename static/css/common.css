@@ -25,7 +25,7 @@ body {
 }
 
 .yellow {
-    color: rgb(250, 219, 20);;
+    color: rgb(250, 219, 20);
 }
 
 .orange{
@@ -47,6 +47,53 @@ body {
 
 #header .navbar .glyphicon {
     margin-right: 10px;
+}
+
+#header .u1 {
+    position: absolute;
+    top: 0;
+    right: 4em;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: .5em 1em;
+    border-radius: 0 0 5px 5px;
+}
+
+#header .user-box{
+    
+}
+
+#header .user-box .search-wrap {
+    display: inline-block;
+    width: 0em;
+    transition: width .15s ease;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: .7em;
+}
+
+#header .user-box .search-wrap input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 2em;
+}
+
+#header .user-box span{
+    cursor: pointer;
+}
+
+#header .user-box a, .avatar{
+    margin-left: .7em;
+}
+
+#header .user-box img{
+    width: 1em;
+    height: 1em;
+}
+
+#header .user-box .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 600px) {
