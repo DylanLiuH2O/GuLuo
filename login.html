@@ -25,7 +25,7 @@
             <div class="logo"><img src="/static/img/logo.png"/></div>
             <div class="slogn"><p>在洛谷，享受 Coding 的欢乐！</p></div>
             <div class="login-form">
-                <form action="#" method="POST">
+                <div action="#" method="get">
                     <div class="user-name">
                         用户名<br>
                         <input type="name" font-size="10px" size="30" placeholder="用户名、手机号或电子邮箱">
@@ -45,7 +45,7 @@
                     <div class="forget-pwd">
                         <a href="#">忘记密码/两步验证</a>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="divider"><hr/></div>
             <div class="login-window-bottom">
@@ -53,7 +53,7 @@
                     <p>第三方平台登录</p>
                 </div>
                 <div class="register">
-                    <p>没有账号？<a href="#">注册</a></p>
+                    <p>没有账号？<a href="/register.html">注册</a></p>
                 </div>
             </div>
         </div>
@@ -105,6 +105,24 @@
             },
         ],
         showData: true
+    })
+
+    $(".submit button").click(function(){
+        let username = $(".user-name input").val()
+        let password = $(".password input").val()
+        let id = $(".id-code input").val()
+        if(!username.length){
+            alert("用户名不能为空")
+        } else if (!password.length) {
+            alert("密码不能为空")
+        } else if (!id.length) {
+            alert("验证码不能为空")
+        } else if(username != "guluo" || password != "123456") {
+            alert("用户名或密码错误")
+        } else {
+            $.cookie("guluo", true)
+            window.location.href='/index.html'
+        }
     })
 </script>
 
