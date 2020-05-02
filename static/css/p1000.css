@@ -100,6 +100,15 @@ svg{
     margin: 0 2px; 
 }
 
-.hide-box1{
-    display: none;
+.hide-box3 img{
+    height: 12px;
+}
+
+.hide-box3 div{
+    display: flex;
+    align-items: center;
+}
+
+.hide-box3 a{
+    margin-left: 5px;
 }

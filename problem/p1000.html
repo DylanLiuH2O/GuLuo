@@ -103,7 +103,7 @@
                 <div class="hide-box1">
                     <span class="this-label">字符串</span>
                 </div>
-                <div class="action-box">
+                <div class="action-box1 action-box">
                     <span>
                         <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg>
                         查看算法标签
@@ -115,7 +115,13 @@
                     <div>相关讨论</div>
                     <a href="#">进入讨论版</a>
                 </div>
-                <div class="action-box">
+                <div class="hide-box2">
+                    <a href="#">有人可以帮我看一下吗？</a><br>
+                    <a href="#">为什么我通过不了啊</a><br>
+                    <a href="#">大佬们求解c++</a><br>
+                    <a href="#">java怎么就是不过，真的邪门啊</a>
+                </div>
+                <div class="action-box2 action-box">
                     <span>
                         <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg>
                         查看讨论
@@ -124,7 +130,21 @@
             </div>
             <div class="problem">
                 推荐题目
-                <div class="action-box">
+                <div class="hide-box3">
+                    <div>
+                        <img src="/static/img/hook.svg">
+                        <a href="/problem/P1001.html">P1001 A+B Problem</a>
+                    </div>
+                    <div>
+                        <img src="/static/img/grey-line.svg">
+                        <a href="#">P1058 不高兴的津津</a>
+                    </div>
+                    <div>
+                        <img src="/static/img/grey-line.svg">
+                        <a href="#">P1421 小玉买文具</a>
+                    </div>
+                </div>
+                <div class="action-box3 action-box">
                     <span>
                         <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg>
                         查看推荐
@@ -182,21 +202,53 @@
         showData: true
     })
 
-    let hide = true;
-        $(".hide-box").hide()
-        $("#action-box span").click(function(){
-            hide = !hide
-            if(hide){
-                $(".hide-box").hide()
-                $("#action-box span").html(`<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg>
-                    显示高级搜索选项`)
-            } 
-            else {
-                $(".hide-box").show()
-                $("#action-box span").html(`<svg data-v-e4b7c2ca="" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-up fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" class=""></path></svg>
-                    隐藏高级搜索选项`)
-            } 
-        })
+    let hide1 = true;
+    $(".hide-box1").hide()
+    $(".action-box1 span").click(function(){
+        hide1 = !hide1
+        if(hide1){
+            $(".hide-box1").hide()
+            $(".action-box1 span").html(`<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg>
+                显示算法标签`)
+        } 
+        else {
+            $(".hide-box1").show()
+            $(".action-box1 span").html(`<svg data-v-e4b7c2ca="" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-up fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" class=""></path></svg>
+                隐藏算法标签`)
+        } 
+    })
+
+    let hide2 = true;
+    $(".hide-box2").hide()
+    $(".action-box2 span").click(function(){
+        hide2 = !hide2
+        if(hide2){
+            $(".hide-box2").hide()
+            $(".action-box2 span").html(`<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg>
+                显示讨论`)
+        } 
+        else {
+            $(".hide-box2").show()
+            $(".action-box2 span").html(`<svg data-v-e4b7c2ca="" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-up fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" class=""></path></svg>
+                隐藏讨论`)
+        } 
+    })
+
+    let hide3 = true;
+    $(".hide-box3").hide()
+    $(".action-box3 span").click(function(){
+        hide3 = !hide3
+        if(hide3){
+            $(".hide-box3").hide()
+            $(".action-box3 span").html(`<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg>
+                显示推荐`)
+        } 
+        else {
+            $(".hide-box3").show()
+            $(".action-box3 span").html(`<svg data-v-e4b7c2ca="" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-up fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M4.465 366.475l7.07 7.071c4.686 4.686 12.284 4.686 16.971 0L224 178.053l195.494 195.493c4.686 4.686 12.284 4.686 16.971 0l7.07-7.071c4.686-4.686 4.686-12.284 0-16.97l-211.05-211.051c-4.686-4.686-12.284-4.686-16.971 0L4.465 349.505c-4.687 4.686-4.687 12.284 0 16.97z" class=""></path></svg>
+                隐藏推荐`)
+        } 
+    })
 </script>
 
 </html>
