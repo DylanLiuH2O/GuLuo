@@ -91,13 +91,21 @@
 .login-window-bottom {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.login-window-bottom a {
+    text-decoration: none;
 }
 
 .other-way-to-login {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     color: rgb(136,136,136);
     margin-bottom: 10px;
-    /* border: 1px solid black; */
+}
+
+.register p {
+    color: rgb(136,136,136);
 }
