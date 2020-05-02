@@ -9,13 +9,8 @@ $(document).click(function(e){
     }
 })
 console.log($.cookie("guluo"))
-if($.cookie("guluo")) {
-    $("#message").attr("href", "#")
-    $("#message").html(`<img src="/static/img/user-nav/message.svg" alt="">`)
-    $("#bell").attr("href", "#")
-    $("#bell").html(`<img src="/static/img/user-nav/bell.svg" alt="">`)
-    $(".avatar").attr("src", "/static/img/avatar/3.png")
-} else {
+$(".user-box .drop-down").hide()
+if(!$.cookie("guluo")) {
     $("#message").attr("href", "/login.html")
     $("#message").html(`登录`)
     $("#bell").attr("href", "/register.html")
@@ -25,4 +20,22 @@ if($.cookie("guluo")) {
     if(path != "/index.html" && path != "/" && path != "/register.html" && path != "/login.html") {
         window.location.href='/login.html'
     }
+} else {
+    let inbox = false;
+    $(".user-box .avatar").mouseenter(function(){
+        $(".user-box .drop-down").fadeIn(200)
+    });
+    $(".user-box .drop-down").mouseenter(function(){
+        inbox = true
+    });
+    $(".user-box .drop-down").mouseleave(function(){
+        inbox = false
+        $(".user-box .drop-down").fadeOut(200)
+    });
+    $(".user-box .avatar").mouseleave(function(){
+        setTimeout(()=>{
+            if(!inbox) $(".user-box .drop-down").fadeOut(200)
+        }, 500)
+    });
+    
 }
