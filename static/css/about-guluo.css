@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px gray solid; */
+}
+
+/* ---头部--- */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+}
+
+header .top, .nav-flex-container {
+    width: 45%;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+header .top p {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header nav a {
+    width: 68px;
+    height: 45px;
+    font-size: 16px;
+    color:rgb(33,33,33);
+    text-align: center;
+}
+
+header nav a:hover, a:focus, a:active{
+    color: rgb(33,33,33);
+}
+header nav .active {
+    font-weight: bold;
+}
+/* ---头部--- */
+
+
+/* ---主体--- */
+main {
+    width: 45%;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+}
+
+main .article-header {
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0;
+    color: rgb(33,33,33);
+}
+
+main .divider {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: .8px solid rgb(222,222,223);
+}
+
+main article p, li {
+    font-size: 16px;
+}
+
+main article .list {
+    margin-left: 35px;
+}
+
+main article .article-bottom {
+    margin-top: 50px;
+}
+
+main article a {
+    text-decoration: none !important;
+}
+/* ---主体--- */
+
+
+/* ---评论组件--- */
+.comments .comments-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.comments textarea {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.comments .user-comment {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+    /* border: 1px solid gray; */
+}
+
+.comments .user-comment p {
+    margin: 0;
+}
+
+.comments .user-avatar img {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.comments .content {
+    width: 92%; 
+    color: rgb(141,142,142);
+}
+
+.comments .content .name {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(33,33,33)
+}
+
+.comments .content time {
+    font-size: 12px;
+    color: rgb(141,142,142); 
+}
+/* ---评论组件--- */
+
+
+/* ---分页组件--- */
+main .page {
+    display: flex !important;
+    flex-direction: row; 
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.pagination a {
+    color: rgb(33,33,33) !important;
+}
+/* ---分页组件--- */
+
+/* ---底部--- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    margin: 150px auto 0 auto;
+    background-color: rgb(27,28,29);
+}
+
+footer .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .content .link {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+footer .content .link a {
+    color: rgb(141,142,142);
+    text-decoration: none;
+}
+
+footer .content .link a:hover {
+    color: white;
+}
+
+footer .content .copy-right {
+    font-weight: 350;
+    font-size: 14px;
+    color:rgb(233,233,233);
+}
+/* ---底部--- */
+
