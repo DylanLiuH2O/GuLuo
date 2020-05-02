@@ -9,6 +9,7 @@ $(document).click(function(e){
     }
 })
 console.log($.cookie("guluo"))
+$(".user-box .drop-down").hide()
 if(!$.cookie("guluo")) {
     $("#message").attr("href", "/login.html")
     $("#message").html(`登录`)
@@ -19,4 +20,22 @@ if(!$.cookie("guluo")) {
     if(path != "/index.html" && path != "/" && path != "/register.html" && path != "/login.html") {
         window.location.href='/login.html'
     }
+} else {
+    let inbox = false;
+    $(".user-box .avatar").mouseenter(function(){
+        $(".user-box .drop-down").fadeIn(200)
+    });
+    $(".user-box .drop-down").mouseenter(function(){
+        inbox = true
+    });
+    $(".user-box .drop-down").mouseleave(function(){
+        inbox = false
+        $(".user-box .drop-down").fadeOut(200)
+    });
+    $(".user-box .avatar").mouseleave(function(){
+        setTimeout(()=>{
+            if(!inbox) $(".user-box .drop-down").fadeOut(200)
+        }, 500)
+    });
+    
 }

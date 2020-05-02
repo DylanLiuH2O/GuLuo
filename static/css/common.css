@@ -49,6 +49,40 @@ body {
     margin-right: 10px;
 }
 
+#header .user-box {
+    position: relative;
+}
+
+#header .user-box .drop-down {
+    position: absolute;
+    top: 110%;
+    right: 0px;
+    color: #333;
+    width: 240px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #6c757d;
+}
+
+#header .user-box .drop-down a {
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#header .user-box .drop-down img {
+    height: 1.2em;
+    width: 1.2em;
+    margin-right: 0.3em;
+}
+
+#header .user-box .drop-down .user-line{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
 #header .u1 {
     position: absolute;
     top: 0;
