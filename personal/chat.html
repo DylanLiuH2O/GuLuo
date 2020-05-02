@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>私信 - 谷洛 | 计算机教育新生态</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/common.css" rel="stylesheet">
+    <link href="/static/css/chat.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 这里写主体内容 -->
+    <div class="chat-container">
+        <div class="chat-sidebar">
+            <header class="top-head">
+                <span class="glyphicon glyphicon-envelope blue"></span><h2>个人私信</h2> 
+            </header>
+            <div class="chat-search">
+                <input type="text" class="form-control" placeholder="搜索联系人">
+            </div>
+            <div class="chat-list">
+                <header>
+                    <h2>最近联系</h2>
+                </header>
+            </div>
+            <hr>
+            <div class="chat-tab">
+                <ul id="myTab" class="nav nav-pills nav-stacked">
+                    <li class="active">
+                        <a href="#zxy" data-toggle="tab" >
+                            <div class="card">
+                                <div class="chat-avatar">
+                                    <img src="/static/img/avatar/ZXY.jpg">
+                                </div>
+                                <div class="info">
+                                    <p><span class="blue name">隔壁老张</span><time>01-24</time></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ldl" data-toggle="tab">
+                            <div class="card">
+                                <div class="chat-avatar">
+                                    <img src="/static/img/avatar/LDL.jpg">
+                                </div>
+                                <div class="info">
+                                    <p><span class="blue name">隔壁小刘</span><time>04-01</time></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="chat-main">
+            <div class="chat-title">
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade blue in active" id="zxy">
+                        <h2>隔壁老张</h2>
+                    </div>
+                    <div class="tab-pane fade blue" id="ldl">
+                        <h2>隔壁小刘</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-content">
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active">
+                        <p>没有更多内容</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-form">
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="button-box">
+                        <button type="button" class="btn btn-primary">发送</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- 以下js文件顺序请勿打乱 -->
+<script src="/static/js/jquery.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/js/common.js"></script>
+<script>
+    /**
+     * 此处是网页公共部分模板, 以下内容主要为调整顶部栏内容, 公共部分的html文件请勿随意修改.
+     * 
+     * header: 选择header, 默认为"header", 可选"header"或"header2". "header"是大多数页面的顶部, "header2"是部分页面的顶部, 例如主页和个人中心.
+     * 
+     * title: 页面标题
+     * 
+     * breadCrumb: 顶部面包屑, 是一个对象数组, 每个对象两个属性, "href"为跳转页面的地址, 建议使用绝对路径, 例如"/index.html","title"为面包屑名称
+     * 
+     * buttons: 按钮组,某些页面存在按钮,是一个对象数组, "href"为跳转页面的地址, "title"为按钮名称, "class"为bootstrap按钮的样式(参考https://v3.bootcss.com/css/#buttons)
+     * 
+     * showData: 布尔值, 是否展示题目数据, 设置为true时会在顶部右侧展示题目数据, (为了方便使用, 题目数据已写死)
+     */
+    new Page({
+        header: "header2",
+        title: "这里是网页标题",
+        breadCrumb: [
+            {
+                href: "#",
+                title: "题目列表"
+            },
+            {
+                href: "#",
+                title: "题目详情"
+            }
+        ],
+        buttons: [
+            {
+                href: "#",
+                title: "提交题目",
+                class: "btn-primary"
+            },
+            {
+                href: "#",
+                title: "加入收藏",
+                class: "btn-default"
+            },
+        ],
+        showData: true
+    })
+</script>
+
+</html>
