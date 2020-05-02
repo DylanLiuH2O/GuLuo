@@ -16,10 +16,11 @@ if(!$.cookie("guluo")) {
     $("#bell").attr("href", "/register.html")
     $("#bell").html(`注册`)
     $(".avatar").attr("src", "/static/img/avatar/1.png")
-    let path = window.location.pathname
-    if(path != "/index.html" && path != "/" && path != "/register.html" && path != "/login.html") {
-        window.location.href='/login.html'
-    }
+    // 强制登录
+    // let path = window.location.pathname
+    // if(path != "/index.html" && path != "/" && path != "/register.html" && path != "/login.html") {
+    //     window.location.href='/login.html'
+    // }
 } else {
     let inbox = false;
     $(".user-box .avatar").mouseenter(function(){
