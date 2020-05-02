@@ -9,13 +9,7 @@ $(document).click(function(e){
     }
 })
 console.log($.cookie("guluo"))
-if($.cookie("guluo")) {
-    $("#message").attr("href", "#")
-    $("#message").html(`<img src="/static/img/user-nav/message.svg" alt="">`)
-    $("#bell").attr("href", "#")
-    $("#bell").html(`<img src="/static/img/user-nav/bell.svg" alt="">`)
-    $(".avatar").attr("src", "/static/img/avatar/3.png")
-} else {
+if(!$.cookie("guluo")) {
     $("#message").attr("href", "/login.html")
     $("#message").html(`登录`)
     $("#bell").attr("href", "/register.html")
