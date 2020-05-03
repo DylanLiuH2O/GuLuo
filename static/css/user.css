@@ -1,0 +1,562 @@
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin: 25px auto;
+}
+
+.user-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* height: 310px; */
+    margin-bottom: 25px;
+}
+
+.user-bg-pic {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 240px;
+    background-image: url(/static/img/background/user-bg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.user-avatar-setting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0 20px 10px 20px;
+}
+
+.user-avatar-setting .user-avatar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-avatar-setting .user-avatar img {
+    border: 1px white solid;
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+.user-avatar-setting .user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-avatar-setting .user-info p {
+    margin: 0;
+}
+
+.user-avatar-setting .user-info .user-name, .user-status {
+    color: white;
+} 
+
+.user-avatar-setting .user-info .user-name {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.user-avatar-setting .btn {
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgba(21,13,10,0.5) !important;
+}
+
+.user-avatar-setting .btn:active{
+    color: white !important;
+}
+
+.user-avatar-setting .btn:hover{
+    background-color: rgba(21,13,10,0.3) !important;
+}
+
+
+
+
+.user-tab-statics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 2%;
+    background-color: white;
+}
+
+.user-tab-statics ul {
+    height: 100%;
+    text-align: center;
+}
+
+.user-tab-statics ul li a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-size: 16px;
+    color: rgb(64,64,64);
+}
+
+.user-tab-statics ul .active a {
+    color: rgb(52,152,219) !important;
+}
+
+.user-tab-statics .user-statics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-tab-statics .user-statics .statics-item {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(64,64,64);
+}
+.user-tab-statics .user-statics p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+.user-tab-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /*  */
+    /* background-color: gray; */
+}
+
+
+/* ---home--- */
+.user-tab-content .home-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 470px;
+    margin-bottom: 15px;
+}
+
+.user-tab-content .home-container .self-intro{
+    width: 795px;
+    height: 130px;
+    padding: 20px;
+    background-color: white;
+}
+
+.user-tab-content .home-container .self-intro header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-tab-content .home-container .self-intro header p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.user-tab-content .home-container .self-intro header .btn {
+    width: 45px;
+    height: 30px;
+    color: rgb(52,152,219) !important;
+    border-color: rgb(52,152,219);
+    padding: 5px;
+}
+
+.user-tab-content .home-container .self-intro article p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.user-tab-content .home-container .info{
+    width: 390px;
+}
+
+.user-tab-content .home-container .register-info {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.user-tab-content .home-container .gu-value {
+    width: 100%;
+    height: 290px;
+    padding: 20px;
+    background-color: white;
+}
+
+.user-tab-content .trend-container .info p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.user-tab-content .home-container .info .register-info p {
+    margin-bottom: 20px;
+}
+
+.user-tab-content .home-container .info .gu-value p {
+    margin-bottom: 10px;
+}
+
+.user-tab-content .home-container .info .info-title {
+    font-size: 18px;
+}
+
+.user-tab-content .home-container .info .info-name  {
+    color: rgb(64,64,64);
+}
+
+.user-tab-content .home-container .info .info-value {
+    color: rgb(140,140,141);
+}
+
+
+.user-tab-content .home-container .info{
+    width: 390px;
+}
+
+.user-tab-content .home-container .register-info {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.user-tab-content .home-container .gu-value {
+    width: 100%;
+    height: 290px;
+    padding: 20px;
+    background-color: white;
+}
+
+.user-tab-content .home-container .info p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.user-tab-content .home-container .info .register-info p {
+    margin-bottom: 20px;
+}
+
+.user-tab-content .home-container .info .gu-value p {
+    margin-bottom: 10px;
+}
+
+.user-tab-content .home-container .info .info-title {
+    font-size: 18px;
+}
+
+.user-tab-content .home-container .info .info-name  {
+    color: rgb(64,64,64);
+}
+
+.user-tab-content .home-container .info .info-value {
+    color: rgb(140,140,141);
+}
+/* ---home--- */
+
+
+
+
+
+/* ---trend--- */
+.user-tab-content .trend-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 470px;
+    margin-bottom: 15px;
+}
+
+.user-tab-content .trend-container .trend{
+    width: 795px;
+    height: 130px;
+    padding: 20px;
+    background-color: white;
+}
+
+.user-tab-content .trend-container article p {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.user-tab-content .trend-container .info{
+    width: 390px;
+}
+
+.user-tab-content .trend-container .register-info {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.user-tab-content .trend-container .gu-value {
+    width: 100%;
+    height: 290px;
+    padding: 20px;
+    background-color: white;
+}
+
+.user-tab-content .trend-container .info p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.user-tab-content .trend-container .info .register-info p {
+    margin-bottom: 20px;
+}
+
+.user-tab-content .trend-container .info .gu-value p {
+    margin-bottom: 10px;
+}
+
+.user-tab-content .trend-container .info .info-title {
+    font-size: 18px;
+}
+
+.user-tab-content .trend-container .info .info-name  {
+    color: rgb(64,64,64);
+}
+
+.user-tab-content .trend-container .info .info-value {
+    color: rgb(140,140,141);
+}
+
+
+.user-tab-content .trend-container .info{
+    width: 390px;
+}
+
+.user-tab-content .trend-container .register-info {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.user-tab-content .trend-container .gu-value {
+    width: 100%;
+    height: 290px;
+    padding: 20px;
+    background-color: white;
+}
+
+.user-tab-content .trend-container .info p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.user-tab-content .trend-container .info .register-info p {
+    margin-bottom: 20px;
+}
+
+.user-tab-content .trend-container .info .gu-value p {
+    margin-bottom: 10px;
+}
+
+.user-tab-content .trend-container .info .info-title {
+    font-size: 18px;
+}
+
+.user-tab-content .trend-container .info .info-name  {
+    color: rgb(64,64,64);
+}
+
+.user-tab-content .trend-container .info .info-value {
+    color: rgb(140,140,141);
+}
+/* ---trend--- */
+
+
+
+/* ---practice--- */
+.user-tab-content .practice-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    /* height: 175px; */
+    /* background-color: white; */
+}
+
+.user-tab-content .practice-container .problems {
+    display: flex;
+    flex-direction: column;
+    width: 795px;
+    height: 555px;
+    /* background-color: white; */
+}
+
+.user-tab-content .practice-container .problems .has-tried {
+    width: 100%;
+    /* height: 135px; */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.user-tab-content .practice-container .problems .passed {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.user-tab-content .practice-container .difficulty-statics {
+    width: 390px;
+    height: 455px;
+    padding: 20px;
+    background-color: white;
+}
+
+.user-tab-content .practice-container .practice-header {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(64,64,64);
+}
+
+.user-tab-content .practice-container .practice-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.user-tab-content .practice-content:after {
+    content: '';
+    flex-grow: 1; 
+}
+
+.user-tab-content .practice-content .problem-id {
+    width: 94px;
+    height: 24px;
+    /* border: 1px solid black; */
+}
+
+.user-tab-content .practice-content span {
+    font-size: 16px;
+}
+
+.user-tab-content .practice-content a {
+    color: rgb(52,152,219);
+}
+
+.user-tab-content .difficulty-statics .statics-header {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.user-tab-content .difficulty-statics .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.user-tab-content .difficulty-statics .list-group-item .label {
+    display: inline-block;
+    padding: 0 8px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 2px;
+}
+
+.label-gray {
+    background-color: rgb(191,191,191);
+}
+.label-red {
+    background-color: rgb(254,76,97);
+}
+.label-orange {
+    background-color: rgb(243,156,17);
+}
+.label-yellow {
+    background-color: rgb(255,193,22);
+}
+.label-green {
+    background-color: rgb(82,196,26);
+}
+.label-blue {
+    background-color: rgb(52,152,219);
+}
+.label-purlple {
+    background-color: rgb(157,61,207);
+}
+.label-dark-purple {
+    background-color: rgb(14,29,105);
+}
+
+/* ---practice--- */
+
+
+
+
+
+.user-tab-content .items-container, .problem-set-container,
+    .following-container, .collection-container {
+    width: 1200px;
+    height: 175px;
+    background-color: white;
+}
+
+.user-tab-content .tab-header p {
+    margin: 0;
+}
+
+.user-tab-content .tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px rgb(232,232,232) solid;
+    margin-bottom: 10px;
+}
+
+.user-tab-content .tab-header span {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.user-tab-content .link a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(64,64,64);
+}
+
+.user-tab-content .link .active-link {
+    color: rgb(52,152,219);
+}
+
+.user-tab-content .tab-article {
+    padding: 20px;
+}
+
