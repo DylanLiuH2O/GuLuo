@@ -172,3 +172,9 @@ svg{
     background-color: #3498db;
     color: white;
 }
+
+.screen select{
+    height: 25px;
+    border:1px solid #cdcdcd;
+    border-radius: 3px;
+}

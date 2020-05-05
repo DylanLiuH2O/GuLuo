@@ -22,60 +22,45 @@
         <div class="search-record">
             <div class="search-key" class="line">
                 <div class="biaoti">查找记录</div>
-                <input type="text" class="form-control" value="P1000">
-                <input type="text" class="form-control" placeholder="用户名或ID">
+                <input type="text" class="form-control" value="P1000" style="height: 30px;">
+                <input type="text" class="form-control" placeholder="用户名或ID" style="height: 30px;">
                 <button type="button" class="btn btn-primary">搜索</button>
             </div>
 
             <div class="screen">
                 <b style="padding-right: 15px;">筛选选项</b>
                 <span style="padding-right: 3px;">记录状态</span>
-                <div class="btn-group" style="padding-right: 10px;">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      全部状态 <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">全部状态</a></li>
-                        <li><a href="#">Compile Error</a></li>
-                        <li><a href="#">Accepted</a></li>
-                        <li><a href="#">Unaccepted</a></li>
-                    </ul>
-                </div>
+                <select>
+                    <option>全部状态</option>
+                    <option>Compile Error</option>
+                    <option>Accepted</option>
+                    <option>Unaccepted</option>
+                </select>
 
                 <span style="padding-right: 3px;">代码语言</span>
-                <div class="btn-group" style="padding-right: 10px;">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      全部语言 <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">全部语言</a></li>
-                        <li><a href="#">Pascal</a></li>
-                        <li><a href="#">C</a></li>
-                        <li><a href="#">C++</a></li>
-                        <li><a href="#">C++11</a></li>
-                        <li><a href="#">提交答案</a></li>
-                        <li><a href="#">Python&nbsp;2</a></li>
-                        <li><a href="#">Python&nbsp;3</a></li>
-                        <li><a href="#">Java&nbsp;8</a></li>
-                        <li><a href="#">Node&nbsp;v8.9</a></li>
-                        <li><a href="#">Shell</a></li>
-                        <li><a href="#">C++14</a></li>
-                        <li><a href="#">C++17</a></li>
-                        <li><a href="#">Ruby</a></li>
-                    </ul>
-                </div>
+                <select>
+                    <option>全部语言</option>
+                    <option>Pascal</option>
+                    <option>C</option>
+                    <option>C++</option>
+                    <option>C++11</option>
+                    <option>提交答案</option>
+                    <option>Python&nbsp;2</option>
+                    <option>Python&nbsp;3</option>
+                    <option>Java&nbsp;8</option>
+                    <option>Node&nbsp;v8.9</option>
+                    <option>Shell</option>
+                    <option>C++14</option>
+                    <option>C++17</option>
+                    <option>Ruby</option>
+                </select>
 
-                <span style="padding-right: 3px;">排序方式</span>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      最新提交 <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">最新提交</a></li>
-                        <li><a href="#">最优解</a></li>
-                </div>               
+                <span style="padding-right: 3px;">排序方式</span> 
+                <select>      
+                    <option>最新提交</option>
+                    <option>最优解</option>        
+                </select> 
             </div>
-
             <div class="search-other">
                 <p style="color:grey">共计<span style="color:black">400</span>条结果</p>
                 <p style="color: rgb(52,152,219);">清除所有筛选条件</p>
