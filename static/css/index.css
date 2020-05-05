@@ -154,15 +154,19 @@ body a {
 
 .statics {
     width: 805px;
-    height: 100%;
-    padding: 20px;
-    background-image: url(/static/img/statics-pic.png);
+    height: 195px;
+    display: flex;
+    /* padding: 20px; */
+    /* background-image: url(/static/img/statics-pic.png);
     background-size: 90%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     
 }
 /* **** */
+.statics>div{
+    flex:1;
+}
 
 
 
