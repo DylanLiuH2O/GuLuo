@@ -7,6 +7,7 @@
 .search-record{
     background-color: white;
     padding: 20px;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
 }
 
 .line {
@@ -56,10 +57,91 @@
 .record-list{
     background-color: white;
     padding: 20px;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
 }
 
 .record-list img{
     border-radius: 50%;
     height: 35px;
-    vertical-align: middle;
+}
+
+/* .img-box{
+    display: flex;
+    
+} */
+
+.row-record{
+    display: flex;
+    border-bottom: 1px solid #e8e8e8; 
+    line-height: 1.5;
+    align-items: center;
+}
+
+.row-record > div{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 6px 8px 0px;
+}
+
+.name-time{
+    width: 170px;
+    padding: 0px 6px 8px 0px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.name-time div:nth-child(1) span{
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(191, 191, 191);
+}
+
+.status{
+    width: 200px;
+}
+
+.status-tag{
+    font-size: 15px;
+    border-radius: 2px;
+    padding:2px 6px;
+    color: white;
+    margin: 0 2px; 
+}
+
+.ac-tag{
+    background-color: #52c41a;
+    width: 75px;
+}
+
+.status-numble{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ac-numble{
+    color: #52c41a;
+}
+
+.problem{
+    font-size: 17px;
+    width: 410px;
+}
+
+svg{
+    height: 1em;
+}
+
+.row-record >.status-data{
+    display: flex;
+    font-size: 14px;
+    color: rgba(0,0,0,0.45);
+    flex-direction: row;
+    align-items: center;
+}
+
+.data{
+    padding-right: 5px;
+    padding-left: 1px;
 }
