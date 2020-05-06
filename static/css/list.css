@@ -144,12 +144,12 @@
     margin: 0 2px; 
 }
 
-.p-pink {
-    background-color: #FE4c61;
-}
-
 .p-red {
     background-color: #e74c3c;
+}
+
+.p-pink {
+    background-color: #FE4c61;
 }
 
 .p-orange {
