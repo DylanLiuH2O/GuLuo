@@ -32,25 +32,25 @@
                     <div class="belong-question-bank">
                         <b>所属题库</b>
                         <ul class="show-ul">
-                            <li>主题库</li>
-                            <li>CodeForces</li>
-                            <li>SPOJ</li>
-                            <li>AtCoder</li>
-                            <li>UVA</li>
+                            <li class="li-default">主题库</li>
+                            <li class="li-default">CodeForces</li>
+                            <li class="li-default">SPOJ</li>
+                            <li class="li-default">AtCoder</li>
+                            <li class="li-default">UVA</li>
                         </ul>
                     </div>
     
                     <div class="question-difficulty">
                         <b>题目难度</b>
                         <ul class="show-ul">
-                            <li>全部</li>
-                            <li>入门</li>
-                            <li>普及-</li>
-                            <li>普及/提高-</li>
-                            <li>普及+/提高</li>
-                            <li>提高+/省选-</li>
-                            <li>省选/NOI-</li>
-                            <li>NOI/NOI+/CTSC</li>
+                            <li class="li-default">全部</li>
+                            <li class="li-default">入门</li>
+                            <li class="li-default">普及-</li>
+                            <li class="li-default">普及/提高-</li>
+                            <li class="li-default">普及+/提高</li>
+                            <li class="li-default">提高+/省选-</li>
+                            <li class="li-default">省选/NOI-</li>
+                            <li class="li-default">NOI/NOI+/CTSC</li>
                         </ul>
                     </div>
     
@@ -238,5 +238,16 @@
             } 
         })
     }
+
+
+    $(function () {
+            $(".li-default").click(function () {
+                $(this).removeClass("li-default");
+                $(this).addClass("li-click");
+                $(this).siblings().removeClass("li-click");
+                $(this).siblings().addClass("li-default");
+            });
+        });
+
 </script>
 </html>

@@ -119,6 +119,17 @@ body {
     color: #666;
     text-decoration: none;
 }
+#header .user-box .u-name{
+    color: #3498db;
+    font-weight: bold; 
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#header .user-box .u-name a{
+    color: #3498db;
+}
 
 #header .user-box img{
     width: 1em;
