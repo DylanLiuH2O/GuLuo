@@ -33,7 +33,7 @@
     background-color: white;
     padding-left: 3%;
 }
-span{
+.lin span{
     display: flex;
     flex-direction: column;
     align-self: center;
