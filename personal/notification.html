@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>通知中心 - 洛谷</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+        <meta name="csrf-token" content="1588581660:Ey+wXRpkp2TdViAyXoQo6Xr/HgmlhWL525AZgOSJel0=">
+    <link rel="stylesheet" href="https://cdn.luogu.com.cn/fe/loader.css?ver=20200501">
+
+    <script src="/static/js/click.js"></script>
+    <link rel="stylesheet" href="/static/css/xxx.css">
+    
+    <script>window._feInjection = JSON.parse(decodeURIComponent("%7B%22code%22%3A200%2C%22currentTemplate%22%3A%22UserNotification%22%2C%22currentData%22%3A%7B%22notifications%22%3A%7B%22result%22%3A%5B%5D%2C%22perPage%22%3A20%2C%22count%22%3A0%7D%2C%22hasUnreadNotification%22%3A%5B%5D%7D%2C%22currentTitle%22%3A%22%5Cu901a%5Cu77e5%5Cu4e2d%5Cu5fc3%22%2C%22currentTheme%22%3A%7B%22id%22%3A1%2C%22header%22%3A%7B%22imagePath%22%3Anull%2C%22color%22%3A%5B%5B35%2C37%2C38%2C1%5D%2C%5B65%2C67%2C69%2C1%5D%5D%2C%22blur%22%3A0%2C%22brightness%22%3A0%2C%22degree%22%3A90%2C%22repeat%22%3A0%2C%22position%22%3A%5B50%2C50%5D%2C%22size%22%3A%5B0%2C0%5D%2C%22type%22%3A2%2C%22__CLASS_NAME%22%3A%22Luogu%5C%5CDataClass%5C%5CUser%5C%5CThemeConfig%5C%5CHeaderFooterConfig%22%7D%2C%22sideNav%22%3A%7B%22logoBackgroundColor%22%3A%5B52%2C152%2C219%2C1%5D%2C%22color%22%3A%5B52%2C73%2C94%2C1%5D%2C%22invertColor%22%3Afalse%2C%22__CLASS_NAME%22%3A%22Luogu%5C%5CDataClass%5C%5CUser%5C%5CThemeConfig%5C%5CSideNavConfig%22%7D%2C%22footer%22%3A%7B%22imagePath%22%3Anull%2C%22color%22%3A%5B%5B51%2C51%2C51%2C1%5D%5D%2C%22blur%22%3A0%2C%22brightness%22%3A0%2C%22degree%22%3A0%2C%22repeat%22%3A0%2C%22position%22%3A%5B0%2C0%5D%2C%22size%22%3A%5B0%2C0%5D%2C%22type%22%3A2%2C%22__CLASS_NAME%22%3A%22Luogu%5C%5CDataClass%5C%5CUser%5C%5CThemeConfig%5C%5CHeaderFooterConfig%22%7D%7D%2C%22currentUser%22%3A%7B%22blogAddress%22%3Anull%2C%22followingCount%22%3A0%2C%22followerCount%22%3A0%2C%22ranking%22%3A29362%2C%22unreadMessageCount%22%3A0%2C%22unreadNoticeCount%22%3A0%2C%22verified%22%3Atrue%2C%22uid%22%3A273965%2C%22name%22%3A%22trapped%22%2C%22slogan%22%3A%22%22%2C%22badge%22%3Anull%2C%22isAdmin%22%3Afalse%2C%22isBanned%22%3Afalse%2C%22color%22%3A%22Blue%22%2C%22ccfLevel%22%3A0%7D%7D"));window._feConfigVersion=1588485528;</script>
+    <script src="https://cdn.luogu.com.cn/fe/loader.js?ver=20200501" charset="utf-8" defer></script>
+
+</head>
+<body>
+<div id="app"></div>
+<script>
+    function scrollToId (id) {
+        $('html, body').animate({
+            scrollTop: ($('#' + id).offset().top)
+        }, 500);
+    }
+</script>
+<style>
+
+    #app-old{
+        display: block;
+        margin-bottom: 2em;
+        /* position: relative;*/
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+</style>
+<div id="app-old">
+    <div class="am-g lg-main-content">
+        <div class="am-u-md-8 am-u-lg-9 lg-right">
+            <div class="lg-content-table-left">
+                <div class="fl">
+                    <div class="border-black ys1">
+                        <div id="con" class="center">
+                            <h2>通知中心</h2>
+                            <li id="@我的" class="clik" onclick="myFunction(id)">@我的</li>
+                            <li id="回复" class="clik" onclick="myFunction(id)">回复</li>
+                            <li id="系统通知" class="clik" onclick="myFunction(id)">系统通知</li>
+                        </div>
+                    </div>
+
+                    <div id="ti" class="border-black ys2"><p class="centerp">@我的</p>
+                        <div class="divider"><p>没有更多通知</p></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+

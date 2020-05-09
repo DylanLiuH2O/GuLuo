@@ -1,0 +1,53 @@
+.both{
+    background-color: white;
+
+    float:right;
+}
+
+.block1{
+    width: 300px;
+    position: relative;
+    left: 15px;
+}
+
+.block2{
+    width: 850px;
+}
+
+.lg-main-content{
+    width: 1300px;
+    margin: auto;
+    position: relative;
+    right: 100px;
+    top: 25px;
+}
+
+.center{
+    position: relative;
+    left: 15px;
+}
+
+input{
+    border: 1px solid blue;
+    position: relative;
+    width: 175px;
+    height: 30px;
+    left: 40px;
+}
+
+.a{
+    width: 75px;
+    height: 40px;
+    background-color: red;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    bottom: 15px;
+}
+
+.am-btn-danger{
+    font-weight: bold;
+    color: aliceblue;
+    position: relative;
+    top: 8px;
+}

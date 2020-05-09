@@ -1,0 +1,106 @@
+
+div
+{
+    position: fix;
+    text-align: left;
+}
+
+p{
+    width: 900px;
+    position: relative;
+    left: 450px;
+}
+
+h1,h2
+{
+    width: 900px;
+    position: relative;
+    left: 450px;
+}
+
+div.menu
+{
+    position: fix;
+    text-align: center;
+}
+
+
+.divider {
+    width: 50%;
+    position: relative;
+    left: 450px;
+    height: 1px;
+    border-top: solid #ACC0D8 1px;
+}
+
+
+a.item
+{
+    position: relative;
+    left: 475px; 
+}
+a.header
+{
+    font-size: 1em;
+    font-weight: 1000;
+    position: relative;
+    left: 450px; 
+}
+div>a.item
+{
+    color: black;
+}
+div>a.item:hover
+{
+    width: 700px;
+    background-color: lightgray;
+}
+
+input,textarea
+{
+    position: relative;
+    left: 450px; 
+}
+
+ul.am-pagination>li
+{
+    position: relative;
+    left: 50px; 
+}
+
+ul>li
+{
+    position: relative;
+    left: 450px; 
+}
+
+a.am-btn-danger
+{
+    position: relative;
+    left: 450px; 
+}
+
+div.listmy
+{
+    background-color: black;
+}
+
+div.listmy p
+{
+    text-align: center;
+    color: white;
+}
+
+div.listmy a.item1
+{
+    position: relative;
+    left: 820px; 
+    color:white;
+}
+
+div.listmy a.item2
+{
+    width: 50px;
+    height: 100%;
+    border-right: solid #ACC0D8 2px;
+}
