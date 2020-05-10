@@ -1,7 +1,6 @@
 /**
  * luogu3.css
  */
-
  ul {
     margin-top: 0;
 }
@@ -58,17 +57,15 @@ input {
 
 
 .lg-table-bg0{
-    /*background: url(/images/bg-trans.png);
-    background-repeat: repeat;
-    background-color: #dff2ff;
-    background-color: #ffffff;*/
+
     background: rgba(255,255,255,0.9);
 }
 .lg-table-row{
     padding:  13px 0;
-    margin: 10px;
+    margin-bottom: 10px;
     border-radius: 2px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid gainsboro;
 }
 .lg-table-row h2{
     margin: 0 18px;
@@ -85,13 +82,6 @@ input {
 }
 
 .lg-article, .lg-article-sub, .lg-article-nctrl {
-    /* border-radius: 2px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05); */
-    /*
-    background: url(/images/bg-trans.png);
-    background-repeat: repeat;
-    background-color: #fff;
-    */
     background: rgba(255,255,255,.7);
     padding: 16px;
     /* font-size: 15px; */
@@ -105,7 +95,7 @@ input {
     font: 18px "Helvetica Neue", "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
     background: transparent;
     padding: 4px;
-    width: 100%;
+    width: 875px;
     border: solid  thin #ccc ;
     outline: none;
 }
@@ -124,4 +114,72 @@ input {
 
 .lg-bold{
     font-weight: bold;
+}
+
+.aaa{
+    width: 900px;
+    height: 1050px;
+    position: relative;
+    left: 450px;
+}
+
+.enter{
+    width: 300px;
+    position: relative;
+    left: 910px;
+}
+
+.ques{
+    height: 500px;
+    position: relative;
+    bottom: 345px;
+}
+
+
+.ma1{
+    position: relative;
+    top: 10px;
+}
+
+.ma2{
+    position: relative;
+    top: 50px;
+}
+
+.pagination-centered li{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gainsboro;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.yema{
+    width: 800px;
+    height: 60px;
+}
+
+.pagination-centered{
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+textarea.xia{
+position: relative;
+top: 10px;
+}
+
+body{
+    background-color: #EFEFEF
+
+}
+
+.post{
+    position: relative;
+    top: 20px;
 }
