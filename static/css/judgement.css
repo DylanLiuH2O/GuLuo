@@ -1,0 +1,63 @@
+*{
+    height: 100% auto;
+    width: 100% auto;
+}
+.gongneng{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.gongneng1{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 27%;
+    height: 35% auto;
+    padding:8px;
+    border-right-width: 0px;
+    background-color: white;
+    border-radius: 8px;
+}
+#link:hover{
+    color: rgb(9, 101, 138);
+    text-decoration: none;
+}
+.menb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.member{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border-color: rgb(54, 221, 207);
+}
+.menb1{
+    display: flex;
+    flex-direction: row;
+    justify-self:left;
+    width: 8%;
+}
+.menb2{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    height: 10% auto;
+    background-color: white;
+    border: rgb(62, 117, 180) 1px solid;
+}
+.menb2-1{
+    background-color: whitesmoke;
+}
+span{
+    font-weight: 600;
+}

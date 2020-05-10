@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>模板</title>
+    <title>首页 - 谷洛 | 计算机教育新生态</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/markdown-palettes.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        #guluo-main{
+            flex:1;
+            margin: 20px auto;
+        }
+        .mtop {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 这里写主体内容 -->
+    <div id="guluo-main" class="container">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4><b>功能说明</b></h4>
+                <p style="font-size:larger; line-height: 2em;">
+                    洛谷云剪贴板可以复制文字资料/代码并生成短连接分享，也可用于记录个人笔记。 可使用 Markdown 进行格式化。<br>
+                    使用云剪贴板时需要遵守 洛谷社区规则 ，不得传播违规内容。
+                </p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4><b>发布</b></h4>
+                <div id="editor-container" style="height: 500px;">
+                    <div id="editor"></div>
+                </div>
+                <div class="mtop">
+                    <input type="checkbox" checked style="margin-right: 10px;"/>公开
+                </div>
+                <div class="mtop">
+                    <button class="btn btn-danger">发布</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</body>
+<!-- 以下js文件顺序请勿打乱 -->
+<script src="/static/js/jquery.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/js/common.js"></script>
+<script src="/static/js/markdown-palettes.min.js"></script>
+<script>
+    new Page({
+        header: "header",
+        title: "云剪贴板",
+        breadCrumb: [
+            {
+                href: "#",
+                title: "云剪贴板"
+            }
+        ]
+    })
+</script>
+<script>
+    let markdownEditor = new MarkdownPalettes("#editor");
+    markdownEditor.contenet = "**content**";
+    let code = markdownEditor.content;
+</script>
+</html>

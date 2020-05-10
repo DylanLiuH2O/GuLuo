@@ -1,0 +1,185 @@
+/**
+ * luogu3.css
+ */
+ ul {
+    margin-top: 0;
+}
+a:hover{
+    cursor: pointer;
+}
+
+
+.lg-header {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    border-color: #3498db;
+}
+
+.lg-toolbar{
+    border: 1px solid #dee5e7;
+    padding: 5px 0px;
+    background-color:rgba(255,255,255,0.8);
+    z-index: 10;
+}
+
+
+.lg-main-content{
+    max-width: 1250px;
+}
+.lg-right{
+    float: right !important;
+    margin-right: 0 !important;
+}
+.lg-summary-list .lg-right{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 200px;
+    text-align: right;
+}
+
+
+.lg-summary{
+    padding: 10px 10px ;
+    /*background: url(/images/bg-trans.png);*/
+    background: rgba(255,255,255,0.9);
+}
+.lg-summary h2{
+    margin-top: 10px;
+}
+
+.lg-summary-content{
+    font-size: 0.9em;
+}
+
+input {
+    line-height: normal;
+}
+
+
+.lg-table-bg0{
+
+    background: rgba(255,255,255,0.9);
+}
+.lg-table-row{
+    padding:  13px 0;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid gainsboro;
+}
+.lg-table-row h2{
+    margin: 0 18px;
+}
+.lg-small{
+    font-size: 10px;
+    color: #7f7f7f;
+}
+
+.lg-inline-up{
+    display: inline-block;
+    vertical-align:top;
+    margin-right: 10px;
+}
+
+.lg-article, .lg-article-sub, .lg-article-nctrl {
+    background: rgba(255,255,255,.7);
+    padding: 16px;
+    /* font-size: 15px; */
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+
+.lg-input-title{
+    font: 18px "Helvetica Neue", "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+    background: transparent;
+    padding: 4px;
+    width: 875px;
+    border: solid  thin #ccc ;
+    outline: none;
+}
+
+.lg-article-sub img{
+    vertical-align: top;
+}
+
+.lg-article-sub textarea ,.lg-article-sub [type=text],.lg-article-sub [type=password],
+.lg-article-sub .am-btn  ,.lg-article-sub .am-radio-inline
+{
+    border-color: #0e90d2;
+    margin-bottom: 18px !important;
+}
+
+
+.lg-bold{
+    font-weight: bold;
+}
+
+.aaa{
+    width: 900px;
+    height: 1050px;
+    position: relative;
+    left: 450px;
+}
+
+.enter{
+    width: 300px;
+    position: relative;
+    left: 910px;
+}
+
+.ques{
+    height: 500px;
+    position: relative;
+    bottom: 345px;
+}
+
+
+.ma1{
+    position: relative;
+    top: 10px;
+}
+
+.ma2{
+    position: relative;
+    top: 50px;
+}
+
+.pagination-centered li{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gainsboro;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.yema{
+    width: 800px;
+    height: 60px;
+}
+
+.pagination-centered{
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+textarea.xia{
+position: relative;
+top: 10px;
+}
+
+body{
+    background-color: #EFEFEF
+
+}
+
+.post{
+    position: relative;
+    top: 20px;
+}

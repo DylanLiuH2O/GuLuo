@@ -1,0 +1,69 @@
+.lin{
+    display: flex;
+    flex-direction: column;
+    border-left: 20%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.lin-r{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-left: 3%;
+    padding-bottom: 3%;
+}
+.lin1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-left: 3%;
+}
+.lin span{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+li
+{
+float:left;
+}
+.lin-r a{
+    color:black;
+}
+
+.lin-r a:link,a:visited
+{
+display:flex;
+width:120px;
+font-weight:bold;
+text-align:center;
+padding:4px;
+text-decoration:none;
+text-transform:uppercase;
+}
+.lin-r a:hover,a:active
+{
+background-color:white;
+}

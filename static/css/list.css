@@ -43,9 +43,17 @@
     display: block;
 }
 
+.li-click{
+    background-color: rgb(52,152,219);
+    border-radius: 3px;
+    color: white;
+}
+
 .search-choice ul>li{
     display: inline-block;
-    padding-right:30px;
+    margin-right:30px;
+    padding: 0 4px;
+    cursor: pointer;
 }
 
 .search-label input{
@@ -144,12 +152,12 @@
     margin: 0 2px; 
 }
 
-.p-pink {
-    background-color: #FE4c61;
-}
-
 .p-red {
     background-color: #e74c3c;
+}
+
+.p-pink {
+    background-color: #FE4c61;
 }
 
 .p-orange {
@@ -189,10 +197,23 @@
     justify-content: center;
     width: auto;
 }
+
 #action-box>span:hover {
     color: black;
 }
+
 #action-box>span>svg {
     width: 14px;
     height: 14px;
+}
+
+.other-choice select{
+    height: 25px;
+    width: 160px;
+    border:1px solid #cdcdcd;
+    border-radius: 3px;
+}
+
+.other-choice > div {
+    padding-left: 20px;
 }

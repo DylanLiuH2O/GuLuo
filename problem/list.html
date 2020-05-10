@@ -32,25 +32,25 @@
                     <div class="belong-question-bank">
                         <b>所属题库</b>
                         <ul class="show-ul">
-                            <li>主题库</li>
-                            <li>CodeForces</li>
-                            <li>SPOJ</li>
-                            <li>AtCoder</li>
-                            <li>UVA</li>
+                            <li class="li-default">主题库</li>
+                            <li class="li-default">CodeForces</li>
+                            <li class="li-default">SPOJ</li>
+                            <li class="li-default">AtCoder</li>
+                            <li class="li-default">UVA</li>
                         </ul>
                     </div>
     
                     <div class="question-difficulty">
                         <b>题目难度</b>
                         <ul class="show-ul">
-                            <li>全部</li>
-                            <li>入门</li>
-                            <li>普及-</li>
-                            <li>普及/提高-</li>
-                            <li>普及+/提高</li>
-                            <li>提高+/省选-</li>
-                            <li>省选/NOI-</li>
-                            <li>NOI/NOI+/CTSC</li>
+                            <li class="li-default">全部</li>
+                            <li class="li-default">入门</li>
+                            <li class="li-default">普及-</li>
+                            <li class="li-default">普及/提高-</li>
+                            <li class="li-default">普及+/提高</li>
+                            <li class="li-default">提高+/省选-</li>
+                            <li class="li-default">省选/NOI-</li>
+                            <li class="li-default">NOI/NOI+/CTSC</li>
                         </ul>
                     </div>
     
@@ -61,15 +61,38 @@
     
                     <div class="other-choice">
                         <b>其他选项</b>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Action <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            </ul>
+                        
+                        <div>
+                            <span>来源</span>
+                            <select>
+                                <option selected="selected" disabled="disabled"  style='display: none' value=''></option>
+                                <option>USACO</option>
+                                <option>各省省选</option>
+                                <option>POI</option>
+                                <option>NOI系列</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <span>时间</span>
+                            <select>
+                                <option selected="selected" disabled="disabled"  style='display: none' value=''></option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2010</option>
+                                <option>2020</option>
+                            </select>
+                        </div>    
+
+                        <div>
+                            <span>地区</span>
+                            <select>
+                                <option selected="selected" disabled="disabled"  style='display: none' value=''></option>
+                                <option>四川</option>
+                                <option>贵州</option>
+                                <option>云南</option>
+                                <option>广东</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -215,5 +238,16 @@
             } 
         })
     }
+
+
+    $(function () {
+            $(".li-default").click(function () {
+                $(this).removeClass("li-default");
+                $(this).addClass("li-click");
+                $(this).siblings().removeClass("li-click");
+                $(this).siblings().addClass("li-default");
+            });
+        });
+
 </script>
 </html>
