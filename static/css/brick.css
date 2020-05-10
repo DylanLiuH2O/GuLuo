@@ -147,6 +147,7 @@ input {
 }
 
 .pagination-centered li{
+    background-color: white;
     width: 40px;
     height: 40px;
     border: 1px solid gainsboro;
@@ -176,4 +177,9 @@ top: 10px;
 body{
     background-color: #EFEFEF
 
+}
+
+.post{
+    position: relative;
+    top: 20px;
 }
