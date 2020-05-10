@@ -38,5 +38,9 @@ if(!$.cookie("guluo")) {
             if(!inbox) $(".user-box .drop-down").fadeOut(200)
         }, 500)
     });
-    
 }
+
+$("#logout").click(function(){
+    $.removeCookie('guluo', { path: '/' })
+    location.reload()
+})
