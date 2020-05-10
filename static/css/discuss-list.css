@@ -1,0 +1,340 @@
+.main {
+	-webkit-flex
+	visibility: visible;
+	height: auto;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	background:#EDEDEB;
+	max-width: 1250px;
+	width:100%;
+	margin:0 auto 0 auto;
+}
+.address, blockquote, dl, fieldset, figure, hr, ol, p, pre, ul {
+	margin: 0 0 1.6rem !important;
+}
+.ol, ul {
+	padding-left: 2em !important;
+}
+.h2 {
+	font-size: 1.25em !important;
+}
+*+h1, *+h2, *+h3, *+h4, *+h5, *+h6 {
+	margin-top: 2em;
+}
+.h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 1.6rem;
+	font-weight: 600;
+	font-size: 100%;
+}
+.piv {
+    margin-top: 1.6rem;
+	margin-bottom:1.6rem;
+}
+.discuss-avatar img {
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+}
+.author {
+    font-weight: bold;
+    font-size: 12px;
+}
+.area {
+    font-size: 10px;
+}
+.in {
+    color: rgb(127,127,127);
+    font-size: 10px;
+}
+.letflist {
+	width:70%;
+	margin-top: 1rem;
+	margin-left: 2rem;
+	display:flex;
+	flex-direction: column;
+	align-items:flex-start;
+	align-content:flex-start;
+	flex-grow:0.5;
+}
+.letflistrow {
+	width:70%;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	display:flex;
+	flex-direction: row;
+	align-items:flex-start;
+	align-content:flex-start;
+	flex-grow:0.5;
+}
+.rightlist{
+	-webkit-flex
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-start;
+	align-items:flex-start;
+	align-content:flex-start;
+	flex-grow:1;
+}
+.comment{
+	margin-bottom: 25px;
+	width: 100%;
+	display:flex;
+	flex-direction: row;
+	align-items:flex-start;
+	align-content:flex-start;
+}
+.post{
+	-webkit-flex;
+	padding: 13px 0;
+    margin: 10px;
+	display:flex;
+	width:100%;
+	background:#FFFFFF;
+}
+.post-1{
+	padding-left: 1rem;
+    padding-right: 1rem;
+	width:25%;
+}
+.post-2{
+	padding-left: 1rem;
+    padding-right: 1rem;
+	width:50%;
+}
+.post-1-1{
+	display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.lg-small {
+    font-size: 10px;
+    color: #7f7f7f;
+}
+.lg-right{
+	display: inline-block;
+	vertical-align: top;
+	max-width: 200px;
+	text-align: right;
+	float: right;
+	margin-right:10px;
+}
+.panel {
+	border-radius: 5px;
+    overflow: hidden;
+	padding: 10px 10px;
+    /* background: url(/images/bg-trans.png); */
+    background: rgba(255,255,255,0.9);
+	max-width: 250px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    border: none;
+}
+.InputAddOn {
+  display: flex;
+}
+
+.InputAddOn-field {
+  flex: 1;
+}
+.form{
+	border-color: #0e90d2;
+	display: block;
+    width: 100%;
+    padding: .5em;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.pag{
+	display:flex;
+	justify-content:center;
+	padding-left: 0;
+    margin-top: 1.5rem;
+    margin-right: 0px;
+    margin-bottom: 1.5rem;
+    margin-left: 0px;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+    color: #999;
+	text-align: center;
+	width: 100%;
+}
+.comment-main{
+	margin-left: 10px;
+	width: 100%;
+	position: relative;
+	border: 1px solid #dd514c;
+	border-radius: 0;
+	background-color: #FFFFFF;
+}
+.comment-discuss{
+	margin-left: 10px;
+	width: 100%;
+	position: relative;
+	border: 1px solid #0e90d2;
+	border-radius: 0;
+	background-color: #FFFFFF;
+}
+.comment-hd{
+	padding: 10px 15px;
+	width: 100%;
+	background-color: #f8f8f8;
+}
+.comment-bd{
+	padding: 15px;
+	overflow: hidden;
+
+}
+.page-icon{
+		display:flex;
+		justify-content:center;
+		margin-top:20px;/*设置距离顶部20像素*/
+		margin-bottom:20px;
+		margin-left:atuo;
+		margin-right:atuo;
+		font-size:0;/*修复行内元素之间空隙间隔*/
+		text-align:center;/*设置内容居中显示*/
+	}
+	
+	/*设置共有的的样式布局，主要是进行代码优化，提高运行效率*/
+	.page-icon a,.page-disabled,.page-next{
+		border:1px solid #ccc;
+		border-radius:3px;
+		padding:4px 10px 5px;
+		font-size:14PX;/*修复行内元素之间空隙间隔*/
+		margin-right:10px;
+	}
+	
+	/*对 a 标签进行样式布局 */
+	.page-icon a{
+		text-decoration:none;/*取消链接的下划线*/
+		color: #3498db;
+		background-color:#FFFFFF;
+	}
+	
+	.page-current{
+		color: #ffffff;
+		background-color:#0e90d2;
+		padding:4px 10px 5px;
+		margin:0 10px 0 0;
+		font-size:14PX;/*修复行内元素之间空隙间隔*/
+	}
+
+	.page-disabled{
+		color:#ccc;
+	}
+	
+	.page-next i,.page-disabled i{
+		cursor:pointer;/*设置鼠标经过时的显示状态，这里设置的是显示状态为小手状态*/
+		display:inline-block;/*设置显示的方式为行内块元素*/
+		width:5px;
+		height:9px;
+	}
+	.page-disabled i{
+		background-position:-80px -608px;
+		margin-right:3px;
+	}
+ 
+	.page-next i{
+		background-position:-62px -608px;
+		margin-left:3px;
+	}
+.am-badge.am-radius {
+    border-radius: 2px;
+}
+.am-badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: .25em .625em;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    background-color: #999;
+}
+.lg-bold {
+    font-weight: bold;
+}
+.lg-fg-purple {
+    color: #8e44ad !important;
+}
+.lg-bg-red {
+    background-color: #e74c3c;
+}
+.center-above{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.center-main{
+	display: flex;
+	justify-content: center;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.comment-title{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	width: 400px;
+	position: relative;
+	border: 1px solid #0e90d2;
+	border-radius: 0;
+}
+.avatar-title{
+	font-size: 15px;
+	font-weight: bold;
+}
+.brief{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: auto;
+}
+.brief-right{
+	position: absolute;
+	right: 0px;
+	padding: 10px;
+}
+.brief-pad{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 13px;
+	color: #7f7f7f;
+}
+.blog-main{
+	background-color: #FFFFFF;
+}
+.ui{
+	width: 1127px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	max-width: 700px;
+	line-height: 1.5;
+	font-size: 1.14285714rem;
+}
+
