@@ -1,220 +1,208 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zh">
+<html lang="zh-CN">
+
 <head>
-    <meta charset="utf-8">
+
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>反馈、申请、工单专版</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>模板</title>
+    <title>首页 - 谷洛 | 计算机教育新生态</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/common.css" rel="stylesheet">
 
-    <meta name="csrf-token" content="1587898304:m72V/gPdloSrykVOP2znXtiVV+9kDzm6y90n58V+eW4=">
+    <link rel="stylesheet" href="/static/css/amazeui.min.css">
 
-    <link rel="stylesheet" href="/static/css/amazeui.min.css"/>
     <link rel="stylesheet" href="/static/css/brick.css">
-    <link rel="stylesheet" href="/static/css/head.css">
-
-    <link rel="stylesheet" href="https://cdn.luogu.com.cn/fe/loader.css?ver=20200504">
-    <script>window._feInjection = JSON.parse(decodeURIComponent("%7B%22code%22%3A200%2C%22currentUser%22%3A%7B%22blogAddress%22%3Anull%2C%22followingCount%22%3A0%2C%22followerCount%22%3A0%2C%22ranking%22%3A28378%2C%22unreadMessageCount%22%3A0%2C%22unreadNoticeCount%22%3A0%2C%22verified%22%3Atrue%2C%22uid%22%3A273965%2C%22name%22%3A%22trapped%22%2C%22slogan%22%3A%22%22%2C%22badge%22%3Anull%2C%22isAdmin%22%3Afalse%2C%22isBanned%22%3Afalse%2C%22color%22%3A%22Blue%22%2C%22ccfLevel%22%3A0%7D%2C%22currentTemplate%22%3A%22Excited%22%2C%22currentData%22%3A%7B%22shortHeader%22%3Afalse%2C%22pageName%22%3A%22%5Cu8ba8%5Cu8bba%5Cu5217%5Cu8868%22%2C%22title%22%3A%22%5Cu53cd%5Cu9988%5Cu3001%5Cu7533%5Cu8bf7%5Cu3001%5Cu5de5%5Cu5355%5Cu4e13%5Cu7248%22%7D%2C%22currentTheme%22%3A%7B%22id%22%3A1%2C%22header%22%3A%7B%22imagePath%22%3Anull%2C%22color%22%3A%5B%5B35%2C37%2C38%2C1%5D%2C%5B65%2C67%2C69%2C1%5D%5D%2C%22blur%22%3A0%2C%22brightness%22%3A0%2C%22degree%22%3A90%2C%22repeat%22%3A0%2C%22position%22%3A%5B50%2C50%5D%2C%22size%22%3A%5B0%2C0%5D%2C%22type%22%3A2%2C%22__CLASS_NAME%22%3A%22Luogu%5C%5CDataClass%5C%5CUser%5C%5CThemeConfig%5C%5CHeaderFooterConfig%22%7D%2C%22sideNav%22%3A%7B%22logoBackgroundColor%22%3A%5B52%2C152%2C219%2C1%5D%2C%22color%22%3A%5B52%2C73%2C94%2C1%5D%2C%22invertColor%22%3Afalse%2C%22__CLASS_NAME%22%3A%22Luogu%5C%5CDataClass%5C%5CUser%5C%5CThemeConfig%5C%5CSideNavConfig%22%7D%2C%22footer%22%3A%7B%22imagePath%22%3Anull%2C%22color%22%3A%5B%5B51%2C51%2C51%2C1%5D%5D%2C%22blur%22%3A0%2C%22brightness%22%3A0%2C%22degree%22%3A0%2C%22repeat%22%3A0%2C%22position%22%3A%5B0%2C0%5D%2C%22size%22%3A%5B0%2C0%5D%2C%22type%22%3A2%2C%22__CLASS_NAME%22%3A%22Luogu%5C%5CDataClass%5C%5CUser%5C%5CThemeConfig%5C%5CHeaderFooterConfig%22%7D%7D%7D"));window._feConfigVersion=1588518581;</script>
-    <script>window._release = '20200504';</script>
-    <script src="https://cdn.luogu.com.cn/fe/loader.js?ver=20200504" charset="utf-8" defer></script>
-
+ 
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-<div id="app"></div>
-<script>
-    function scrollToId (id) {
-        $('html, body').animate({
-            scrollTop: ($('#' + id).offset().top)
-        }, 500);
-    }
-</script>
-<style>
-    .lg-toolbar {
-        display: none;
-    }
-
-    #app-old{
-        display: block;
-        margin-bottom: 2em;
-        /* position: relative;*/
-        box-sizing: border-box;
-        max-width: 100%;
-    }
-
-    code {
-        font-family: monospace, "Courier New";
-    }
-
-</style>
-<div id="app-old">
-    <div class="lg-toolbar" data-am-sticky>
-        <h1>反馈、申请、工单专版</h1>
-    </div>
-    <div class="am-g lg-main-content">
-        <div class="am-u-md-4 am-u-lg-3 lg-right">
-            <section class="am-panel am-panel-default lg-summary">
-                <h2>进入板块</h2>
-                <p>
-                    <a data-pjax class="am-btn am-btn-primary am-btn-sm"
-                       href="/discuss/lists?forumname=siteaffairs">站务版</a>
-                    <a data-pjax class="am-btn am-btn-primary am-btn-sm"
-                       href="/discuss/lists?forumname=problem">题目总版</a>
-                </p>
-                <p>
-                    <a data-pjax class="am-btn am-btn-primary am-btn-sm"
-                       href="/discuss/lists?forumname=academics">学术版</a>
-                    <a data-pjax class="am-btn am-btn-primary am-btn-sm"
-                       href="/discuss/lists?forumname=relevantaffairs">灌水区</a>
-                </p>
-                <p>
-                    <a data-pjax class="am-btn am-btn-primary am-btn-sm"
-                       href="/discuss/lists?forumname=service">反馈、申请、工单专版</a>
-                </p>
-                <p>
-                <div class="am-input-group am-input-group-primary am-input-group-sm">
-                    <input type="text" class="am-form-field" placeholder="题目编号" name="forumname">
-                    <span class="am-input-group-label" name="discusssearch">进入板块</span>
-                </div>
-                </p>
-
-                <p>
-                    <a data-pjax class="am-btn am-btn-danger am-btn-sm" href="javascript: scrollToId('newpost')">发表帖子</a>
-                    <a data-pjax href="https://studyingfather.blog.luogu.org/how-to-ask-questions-the-smart-way-luogu-edition" style="font-size: 14px;">提问的智慧</a>
-                    <a data-pjax class="am-btn am-btn-primary am-btn-sm" href="/problemnew/show/P1001">返回题目</a>
-                </p>
-            </section>
-        </div>
-        <div class="am-u-md-8 am-u-lg-9 lg-right">
-            <div class="lg-content-table-left">
-                <div class="am-g lg-table-bg0 lg-table-row">
-                    <div class="am-u-md-3">
-                        <div class="lg-inline-up"><a href="/user/307453" class="center">
-                            <img src="https://cdn.luogu.com.cn/upload/usericon/307453.png" class="am-comment-avatar"/>
-                        </a></div>
-                        <div class="lg-inline-up">
-                            <span class="lg-small"><a class='lg-fg-orange lg-bold' href="/user/307453"  target="_blank">云浅知处</a></span><br>
-                            <span class="lg-small">17个回复</span>
-                        </div>
+    <!-- 这里写主体内容 -->
+   
+<div class="aaa">
+    <div id="app"></div>
+    
+        <div class="am-g lg-main-content">
+            <div class="enter">
+                <section class="am-panel am-panel-default lg-summary">
+                    <h2>进入板块</h2>
+                    <p>
+                        <a data-pjax class="am-btn am-btn-primary am-btn-sm"
+                           href="#">站务版</a>
+                        <a data-pjax class="am-btn am-btn-primary am-btn-sm"
+                           href="#">题目总版</a>
+                    </p>
+                    <p>
+                        <a data-pjax class="am-btn am-btn-primary am-btn-sm"
+                           href="#">学术版</a>
+                        <a data-pjax class="am-btn am-btn-primary am-btn-sm"
+                           href="#">灌水区</a>
+                    </p>
+                    <p>
+                        <a data-pjax class="am-btn am-btn-primary am-btn-sm"
+                           href="#">反馈、申请、工单专版</a>
+                    </p>
+                    <p>
+                    <div class="am-input-group am-input-group-primary am-input-group-sm">
+                        <input type="text" class="am-form-field" placeholder="题目编号" name="forumname">
+                        <span class="am-input-group-label" name="discusssearch">进入板块</span>
                     </div>
-                    <div class="am-u-md-6">
-                        <a data-pjax
-                           href="/discuss/show?postid=217714">（2020.4.28更新）题目评分反馈贴</a><br>
-                        <span class="lg-small">In
-                            <a data-pjax
-                               href="/discuss/lists?forumname=P1001">反馈、申请、工单专版</a>
-                        @2020-04-23 09:21</span>
-                    </div>
-                    <div class="am-u-md-3">
-                        <span class="lg-small">最新回复：<a class='lg-fg-green' href="/user/35153"  target="_blank">enyang2007</a></span><br>
-                        <span class="lg-small">@2020-04-23 10:28</span>
-                    </div>
-                </div>
-                <div class="am-g lg-table-bg0 lg-table-row">
-                    <div class="am-u-md-3">
-                        <div class="lg-inline-up"><a href="/user/339209" class="center">
-                            <img src="https://cdn.luogu.com.cn/upload/usericon/339209.png" class="am-comment-avatar"/>
-                        </a></div>
-                        <div class="lg-inline-up">
-                            <span class="lg-small"><a class='lg-fg-bluelight' href="/user/339209"  target="_blank">语文公主</a></span><br>
-                            <span class="lg-small">29个回复</span>
-                        </div>
-                    </div>
-                    <div class="am-u-md-6">
-                        <a data-pjax
-                           href="/discuss/show?postid=216379">用户举报专区</a><br>
-                        <span class="lg-small">In
-                            <a data-pjax
-                               href="/discuss/lists?forumname=P1001">反馈、申请、工单专版 </a>
-                        @2020-04-19 09:28</span>
-                    </div>
-                    <div class="am-u-md-3">
-                        <span class="lg-small">最新回复：<a class='lg-fg-green' href="/user/206010"  target="_blank">凤与沧泪</a></span><br>
-                        <span class="lg-small">@2020-04-19 12:47</span>
-                    </div>
-                </div>
-                <div class="am-g lg-table-bg0 lg-table-row">
-                    <div class="am-u-md-3">
-                        <div class="lg-inline-up"><a href="/user/8457" class="center">
-
-                            <img src="https://cdn.luogu.com.cn/upload/usericon/122365.png" class="am-comment-avatar"/>
-                        </a></div>
-                        <div class="lg-inline-up">
-                            <span class="lg-small"><a class='lg-fg-bluelight' href="/user/122365"  target="_blank">GTfct</a></span><br>
-                            <span class="lg-small">24个回复</span>
-                        </div>
-                    </div>
-                    <div class="am-u-md-6">
-                        <a data-pjax
-                           href="/discuss/show?postid=182590">【反馈前必读】工单板块规则</a><br>
-                        <span class="lg-small">In
-                                                    <a data-pjax
-                                                       href="/discuss/lists?forumname=P1001">反馈、申请、工单专版</a>
-                                                @2020-01-17 12:16</span>
-                    </div>
-                    <div class="am-u-md-3">
-                        <span class="lg-small">最新回复：<a class='lg-fg-bluelight' href="/user/310221"  target="_blank">SlimMathers</a></span><br>
-                        <span class="lg-small">@2020-04-12 12:06</span>
-                    </div>
-                </div>
-
-                <div class="pagination-centered"><ul class="am-pagination am-pagination-centered"><li class="am-active"><a>1</a></li><li><a href="/discuss/lists?forumname=P1001&amp;page=2" data-pjax="data-pjax" data-ci-pagination-page="2">2</a></li><li><a href="/discuss/lists?forumname=P1001&amp;page=3" data-pjax="data-pjax" data-ci-pagination-page="3">3</a></li><li><a href="/discuss/lists?forumname=P1001&amp;page=4" data-pjax="data-pjax" data-ci-pagination-page="4">4</a></li><li><a href="/discuss/lists?forumname=P1001&amp;page=5" data-pjax="data-pjax" data-ci-pagination-page="5">5</a></li><li><a href="/discuss/lists?forumname=P1001&amp;page=6" data-pjax="data-pjax" data-ci-pagination-page="6">6</a></li><li><a href="/discuss/lists?forumname=P1001&amp;page=2" data-pjax="data-pjax" data-ci-pagination-page="2" rel="next">&gt;</a></li><li><a href="/discuss/lists?forumname=P1001&amp;page=19" data-pjax="data-pjax" data-ci-pagination-page="19">&raquo;</a></li></ul></div>
-                <div class="lg-article am-g">
-                    <h2 id="newpost">发表讨论</h2>
-                    <input class="lg-input-title" type="text" placeholder="这里是标题" name="title"/><br>
-                    <textarea style="width: 905px;height: 500px;" row="500" cols="50" placeholder="内容"></textarea>
-
-                    <input name='verify' type="hidden"/>
-
-                    <span class="lg-small">希望更丰富的展现？<a data-pjax href="/blog/luogu/how-to-use-markdown">使用Markdown</a></span><br>
-                    <a class="am-btn am-btn-danger" id="submitpost" forumid="P1001">发帖</a>
+                    </p>
+    
+            
+                    <p>
+                        <a data-pjax class="am-btn am-btn-danger am-btn-sm" href="javascript: scrollToId('newpost')">发表帖子</a>
+                        <a data-pjax href="#" style="font-size: 14px;">提问的智慧</a>
+                        <a data-pjax class="am-btn am-btn-primary am-btn-sm" href="#">返回题目</a>
+                    </p>
+                </section>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="ques">
+                <div class="lg-content-table-left">
+                    <div class="am-g lg-table-bg0 lg-table-row">
+                        <div class="am-u-md-3">
+                            <div class="lg-inline-up"><a href="#" class="center">
+                                <img src="/static/img/avatar/ZXY.jpg" class="am-comment-avatar"/>
+                            </a></div>
+                            <div class="lg-inline-up">
+                                <span class="lg-small"><a class='lg-fg-orange lg-bold' href="#"  target="_blank">铁憨憨</a></span><br>
+                                <span class="lg-small">17个回复</span>
+                            </div>
+                        </div>
+                        <div class="am-u-md-6">
+                            <a data-pjax
+                               href="#">（2020.4.28更新）题目评分反馈贴</a><br>
+                            <span class="lg-small">In
+                                <a data-pjax
+                                   href="#">反馈、申请、工单专版</a>
+                            @2020-04-23 09:21</span>
+                        </div>
+                        <div class="am-u-md-3">
+                            <span class="lg-small">最新回复：<a class='lg-fg-green' href="#"  target="_blank">enyang2007</a></span><br>
+                            <span class="lg-small">@2020-04-23 10:28</span>
+                        </div>
+                    </div>
+                    <div class="am-g lg-table-bg0 lg-table-row m1">
+                        <div class="am-u-md-3">
+                            <div class="lg-inline-up"><a href="#" class="center">
+                                <img src="/static/img/avatar/LDL.jpg" class="am-comment-avatar"/>
+                            </a></div>
+                            <div class="lg-inline-up">
+                                <span class="lg-small"><a class='lg-fg-orange lg-bold' href="#"  target="_blank">学习机器</a></span><br>
+                                <span class="lg-small">17个回复</span>
+                            </div>
+                        </div>
+                        <div class="am-u-md-6">
+                            <a data-pjax
+                               href="#">（2020.4.28更新）题目评分反馈贴</a><br>
+                            <span class="lg-small">In
+                                <a data-pjax
+                                   href="#">反馈、申请、工单专版</a>
+                            @2020-04-23 09:21</span>
+                        </div>
+                        <div class="am-u-md-3">
+                            <span class="lg-small">最新回复：<a class='lg-fg-green' href="#"  target="_blank">enyang2007</a></span><br>
+                            <span class="lg-small">@2020-04-23 10:28</span>
+                        </div>
+                    </div>
+                
+                    <div class="am-g lg-table-bg0 lg-table-row m2">
+                        <div class="am-u-md-3">
+                            <div class="lg-inline-up"><a href="#" class="center">
+                                <img src="/static/img/avatar/LYC.jpg" class="am-comment-avatar"/>
+                            </a></div>
+                            <div class="lg-inline-up">
+                                <span class="lg-small"><a class='lg-fg-orange lg-bold' href="#"  target="_blank">羽毛球王子</a></span><br>
+                                <span class="lg-small">17个回复</span>
+                            </div>
+                        </div>
+                        <div class="am-u-md-6">
+                            <a data-pjax
+                               href="#">（2020.4.28更新）题目评分反馈贴</a><br>
+                            <span class="lg-small">In
+                                <a data-pjax
+                                   href="#">反馈、申请、工单专版</a>
+                            @2020-04-23 09:21</span>
+                        </div>
+                        <div class="am-u-md-3">
+                            <span class="lg-small">最新回复：<a class='lg-fg-green' href="#"  target="_blank">enyang2007</a></span><br>
+                            <span class="lg-small">@2020-04-23 10:28</span>
+                        </div>
+                    </div>
+    
+                    <div class="pagination-centered yema"><ul class="#"><li class="am-active"><a>1</a></li><li><a href="#" data-pjax="data-pjax" data-ci-pagination-page="2">2</a></li><li><a href="#" data-pjax="data-pjax" data-ci-pagination-page="3">3</a></li><li><a href="#" data-pjax="data-pjax" data-ci-pagination-page="4">4</a></li><li><a href="#" data-pjax="data-pjax" data-ci-pagination-page="5">5</a></li><li><a href="# data-pjax="data-pjax" data-ci-pagination-page="6">6</a></li><li><a href="#" data-pjax="data-pjax" data-ci-pagination-page="2" rel="next">&gt;</a></li><li><a href="#" data-pjax="data-pjax" data-ci-pagination-page="19">&raquo;</a></li></ul></div>
+                    <div class="lg-article am-g">
+                        <h2 id="newpost">发表讨论</h2>
+                        <input class="lg-input-title" type="text" placeholder="这里是标题" name="title"/><br>
+                        <textarea class="xia" style="width: 875px;height: 500px;" row="500" cols="50" placeholder="内容"></textarea>
+    
+                        <input name='verify' type="hidden"/>
+    
+                        <span class="lg-small">希望更丰富的展现？<a data-pjax href="#">使用Markdown</a></span><br>
+                        <a class="am-btn am-btn-danger" id="submitpost" forumid="P1001">发帖</a>
+                    </div>
+                </div>
+            </div>
 
-    <script>
-        var markdownPalettes;
-        $(document).ready(function() {
-            markdownPalettes = new MarkdownPalettes('#editor-new');
-        });
 
-        $("#submitpost").click(
-            function () {
-                $(this).addClass("am-disabled");
-                $(this).attr("name", "xx");
-                $(this).val("提交中");
-                var forumname, title, content, verify;
-                forumname = $("#submitpost").attr("forumid");
-                title = $("[name=title]").val();
-                content = markdownPalettes.content;
-                verify = $("[name=verify]").val();
-                $.post("/api/discuss/post", {
-                        title: title, forum: forumname,
-                        content: content, verify: verify
-                    },
-                    function (resp) {
-                        if (resp.status !== 200) {
-                            show_alert("好像哪里有点不对", resp.data);
-                        } else {
-                            goto_url('/discuss/show/'+resp.data);
-                        }
-                    }
-                );
 
-            }
-        );
-
-        $("[name=discusssearch]").click(
-            function () {
-                var forumname;
-                forumname = $('[name=forumname]').val();
-                param = {
-                    forumname: forumname
-                };
-                goto_url('/discuss/lists', param);
-            }
-        );
-    </script>
 </div>
+
+
+    
 </body>
+<!-- 以下js文件顺序请勿打乱 -->
+<script src="/static/js/jquery.min.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/js/common.js"></script>
+<script>
+    /**
+     * 此处是网页公共部分模板, 以下内容主要为调整顶部栏内容, 公共部分的html文件请勿随意修改.
+     * 
+     * header: 选择header, 默认为"header", 可选"header"或"header2". "header"是大多数页面的顶部, "header2"是部分页面的顶部, 例如主页和个人中心.
+     * 
+     * title: 页面标题
+     * 
+     * breadCrumb: 顶部面包屑, 是一个对象数组, 每个对象两个属性, "href"为跳转页面的地址, 建议使用绝对路径, 例如"/index.html","title"为面包屑名称
+     * 
+     * buttons: 按钮组,某些页面存在按钮,是一个对象数组, "href"为跳转页面的地址, "title"为按钮名称, "class"为bootstrap按钮的样式(参考https://v3.bootcss.com/css/#buttons)
+     * 
+     * showData: 布尔值, 是否展示题目数据, 设置为true时会在顶部右侧展示题目数据, (为了方便使用, 题目数据已写死)
+     */
+    new Page({
+        header: "header",
+        title: "反馈、申请、工单专版",
+        breadCrumb: [
+            {
+                href: "#",
+                title: "题目列表"
+            },
+            {
+                href: "#",
+                title: "题目详情"
+            }
+        ],
+        buttons: [
+            {
+                href: "#",
+                title: "提交题目",
+                class: "btn-primary"
+            },
+            {
+                href: "#",
+                title: "加入收藏",
+                class: "btn-default"
+            },
+        ],
+        showData: true
+    })
+</script>
 
 </html>
-

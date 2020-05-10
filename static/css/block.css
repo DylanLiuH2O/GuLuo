@@ -1,30 +1,39 @@
 .both{
     background-color: white;
-
     float:right;
 }
 
 .block1{
-    width: 300px;
+    width: 250px;
     position: relative;
     left: 15px;
+    word-wrap:break-word; 
+    overflow:hidden;
 }
 
 .block2{
-    width: 850px;
+    width: 950px;
 }
 
 .lg-main-content{
     width: 1300px;
     margin: auto;
     position: relative;
-    right: 100px;
-    top: 25px;
+    right: 170px;
+    bottom: 15px;
 }
 
-.center{
+.center1{
+    width: 230px;
     position: relative;
     left: 15px;
+
+}
+
+.center2{
+    position: relative;
+    left: 15px;
+
 }
 
 input{
@@ -50,4 +59,13 @@ input{
     color: aliceblue;
     position: relative;
     top: 8px;
+}
+
+.aaa{
+    width: 800px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    right: 100px;
+    top: 25px;
 }

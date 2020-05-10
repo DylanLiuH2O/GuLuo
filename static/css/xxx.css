@@ -1,11 +1,21 @@
+.aaa{
+    width: 800px;
+    height: 800px;
+}
+
 .ys1{
     width: 170px;
     height: 650px;
+    position: relative;
+    left: 220px;
 }
 
 .ys2{
     width: 1000px;
     height: 650px;
+    background-color: white;
+    position: relative;
+    left: 400px;
 }
 
 .border-black{
@@ -46,9 +56,15 @@ li{
     text-align: center;
     height: 30px;
     font-size: 20px;
+
 }
 
 li:hover{
     cursor: pointer;
+}
+
+p{
+    position: relative;
+    right: 100px;
 }
 
