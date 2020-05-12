@@ -1,47 +1,46 @@
 .both{
     background-color: white;
-    float:right;
 }
 
 .block1{
     width: 250px;
-    position: relative;
-    left: 15px;
     word-wrap:break-word; 
     overflow:hidden;
 }
 
 .block2{
-    width: 950px;
+    
 }
 
 .lg-main-content{
-    width: 1300px;
     margin: auto;
-    position: relative;
-    right: 170px;
-    bottom: 15px;
+    display: flex;
+    margin: 10px 0;
+}
+
+.lg-article.am-g.both.block2 {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.am-panel.am-panel-default.lg-summary.both.block1 {
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .center1{
     width: 230px;
-    position: relative;
-    left: 15px;
 
 }
 
 .center2{
-    position: relative;
-    left: 15px;
-
 }
 
 input{
     border: 1px solid blue;
-    position: relative;
     width: 175px;
     height: 30px;
-    left: 40px;
 }
 
 .a{
@@ -50,22 +49,17 @@ input{
     background-color: red;
     text-align: center;
     border-radius: 5px;
-    position: relative;
-    bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .am-btn-danger{
     font-weight: bold;
     color: aliceblue;
-    position: relative;
-    top: 8px;
 }
 
 .aaa{
-    width: 800px;
-    height: 700px;
     margin: auto;
-    position: relative;
-    right: 100px;
-    top: 25px;
 }
