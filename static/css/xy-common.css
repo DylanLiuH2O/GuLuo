@@ -1,21 +1,12 @@
 
 div
 {
-    position: fix;
     text-align: left;
-}
-
-p{
-    width: 900px;
-    position: relative;
-    left: 450px;
 }
 
 h1,h2
 {
     width: 900px;
-    position: relative;
-    left: 450px;
 }
 
 div.menu
@@ -24,11 +15,8 @@ div.menu
     text-align: center;
 }
 
-
 .divider {
     width: 50%;
-    position: relative;
-    left: 450px;
     height: 1px;
     border-top: solid #ACC0D8 1px;
 }
@@ -36,15 +24,12 @@ div.menu
 
 a.item
 {
-    position: relative;
     left: 475px; 
 }
 a.header
 {
     font-size: 1em;
     font-weight: 1000;
-    position: relative;
-    left: 450px; 
 }
 div>a.item
 {
@@ -56,28 +41,14 @@ div>a.item:hover
     background-color: lightgray;
 }
 
-input,textarea
-{
-    position: relative;
-    left: 450px; 
-}
-
 ul.am-pagination>li
 {
-    position: relative;
     left: 50px; 
-}
-
-ul>li
-{
-    position: relative;
-    left: 450px; 
 }
 
 a.am-btn-danger
 {
-    position: relative;
-    left: 450px; 
+    margin-top: 10px;
 }
 
 div.listmy
@@ -93,7 +64,6 @@ div.listmy p
 
 div.listmy a.item1
 {
-    position: relative;
     left: 820px; 
     color:white;
 }
