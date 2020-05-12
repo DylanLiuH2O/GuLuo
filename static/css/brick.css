@@ -117,22 +117,17 @@ input {
 }
 
 .aaa{
-    width: 900px;
     height: 1050px;
-    position: relative;
-    left: 450px;
+    display: flex;
+    margin-top: 10px;
 }
 
 .enter{
     width: 300px;
-    position: relative;
-    left: 910px;
 }
 
 .ques{
     height: 500px;
-    position: relative;
-    bottom: 345px;
 }
 
 
