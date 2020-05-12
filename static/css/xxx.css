@@ -1,43 +1,28 @@
 .aaa{
-    width: 800px;
-    height: 800px;
+    margin-bottom: 10px;
 }
 
 .ys1{
     width: 170px;
     height: 650px;
-    position: relative;
-    left: 220px;
 }
 
 .ys2{
     width: 1000px;
     height: 650px;
     background-color: white;
-    position: relative;
-    left: 400px;
 }
 
 .border-black{
     background-color: white;
     border:1px solid gainsboro;
-    float:left;
 }
 
 .fl{
-    position: relative;
-    left: 100px;
-    top: 35px;
-    height: 1px;
-    clear: both;
+    display: flex;
 }
 
 .divider {
-    width: 96%;
-    position: relative;
-    left: 20px;
-    top: 10px;
-    height: 1px;
     border-top: solid gainsboro 1px;
 }
 
@@ -46,7 +31,7 @@ div.center{
     margin: auto;
 }
 
-li{
+.aaa li{
     position: relative;
     top: 40px;
     height: 40px;
@@ -63,8 +48,7 @@ li:hover{
     cursor: pointer;
 }
 
-p{
-    position: relative;
-    right: 100px;
+.px{
+    margin: 10px;
 }
 
